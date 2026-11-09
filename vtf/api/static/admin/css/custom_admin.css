@@ -1,0 +1,492 @@
+/* VTF Custom Admin Theme - Primary: #D97755 | Delete/Danger: #B8784A (warm amber) */
+
+:root {
+    --primary: #D97755;
+    --primary-dark: #c4633f;
+    --primary-light: #e89a7e;
+    --primary-fg: #fff;
+    --body-fg: #333;
+    --body-bg: #f9f6f4;
+    --header-color: #D97755;
+    --header-branding-color: var(--primary-fg);
+    --header-bg: var(--primary);
+    --header-link-color: var(--primary-fg);
+    --breadcrumbs-fg: #fff;
+    --breadcrumbs-link-fg: #fff;
+    --breadcrumbs-bg: var(--primary-dark);
+    --link-fg: #D97755;
+    --link-hover-color: #c4633f;
+    --link-selected-fg: #c4633f;
+    --hairline-color: #e8d6ce;
+    --border-color: #e8d6ce;
+    --darkened-bg: #f0e8e4;
+    --selected-bg: #fdf0eb;
+    --selected-row: #fdf0eb;
+    --button-fg: #fff;
+    --button-bg: #D97755;
+    --button-hover-bg: #c4633f;
+    --default-button-bg: #D97755;
+    --default-button-hover-bg: #c4633f;
+    --close-button-bg: #8b8b8b;
+    --close-button-hover-bg: #707070;
+    --delete-button-bg: #B8784A;
+    --delete-button-hover-bg: #A06840;
+    --object-tools-fg: #fff;
+    --object-tools-bg: #D97755;
+    --object-tools-hover-bg: #c4633f;
+}
+
+/* Header */
+#header {
+    background: #D97755 !important;
+    color: #fff !important;
+}
+
+#header a:link,
+#header a:visited {
+    color: #fff !important;
+}
+
+/* Logo in header */
+body:not(.login) #header {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    min-height: 106px;
+    padding: 0;
+}
+
+body:not(.login) #branding {
+    display: block;
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+}
+
+body:not(.login) .admin-brand-card {
+    width: 100%;
+    background: #fff;
+}
+
+.admin-logo-strip {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.admin-logo-strip .vtf-logo {
+    display: block;
+    width: 88px;
+    height: auto;
+}
+
+.admin-titlebar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background: #D97755;
+    color: #fff;
+    font-weight: 700;
+}
+
+body:not(.login) .admin-logo-strip {
+    height: 65px;
+    padding: 12px 40px;
+}
+
+body:not(.login) .admin-logo-strip .vtf-logo {
+    max-height: 41px;
+}
+
+body:not(.login) .admin-titlebar {
+    justify-content: flex-start;
+    min-height: 41px;
+    padding: 8px 40px;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+body:not(.login) #user-tools {
+    position: absolute;
+    right: 40px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    min-height: 41px;
+    margin: 0;
+    padding: 8px 0;
+    box-sizing: border-box;
+}
+
+/* Breadcrumbs */
+div.breadcrumbs {
+    background: #c4633f !important;
+    color: #fff !important;
+}
+
+div.breadcrumbs a {
+    color: #fff !important;
+}
+
+/* Module headers */
+.module h2,
+.module caption,
+.inline-group h2 {
+    background: #D97755 !important;
+    color: #fff !important;
+}
+
+/* Buttons */
+.submit-row input[type="submit"],
+input[type="submit"],
+.button,
+a.button {
+    background: #D97755 !important;
+    border-color: #c4633f !important;
+    color: #fff !important;
+}
+
+.submit-row input[type="submit"]:hover,
+input[type="submit"]:hover,
+.button:hover,
+a.button:hover {
+    background: #c4633f !important;
+}
+
+.submit-row input.default {
+    background: #D97755 !important;
+    border-color: #c4633f !important;
+}
+
+.submit-row input.default:hover {
+    background: #c4633f !important;
+}
+
+/* Delete / danger button — warm amber to match the UI theme */
+.submit-row .deletelink,
+.deletelink {
+    background: #B8784A !important;
+    border-color: #A06840 !important;
+    color: #fff !important;
+}
+
+.submit-row .deletelink:hover,
+.deletelink:hover {
+    background: #A06840 !important;
+}
+
+/* Recent Actions sidebar — deletion log entries (match primary theme orange) */
+#recent-actions-module .deletelink,
+.recent-actions-container .deletedlink,
+ul.actionlist li .deletelink {
+    background: #D97755 !important;
+    border-color: #c4633f !important;
+    color: #fff !important;
+}
+
+/* Links */
+a:link,
+a:visited {
+    color: #D97755;
+}
+
+a:hover {
+    color: #c4633f;
+}
+
+/* Selected row */
+.results table tbody tr.selected {
+    background-color: #fdf0eb !important;
+}
+
+/* Object tools */
+.object-tools a:link,
+.object-tools a:visited {
+    background: #D97755 !important;
+    color: #fff !important;
+}
+
+.object-tools a:hover {
+    background: #c4633f !important;
+}
+
+/* Calendar & date */
+.calendar td.selected a,
+.timelist a.active {
+    background: #D97755 !important;
+}
+
+/* Addlink / changelink icons */
+.addlink,
+.changelink {
+    color: #D97755 !important;
+}
+
+/* Footer */
+#vtf-footer {
+    background: #D97755;
+    color: #fff;
+    text-align: center;
+    padding: 14px 20px;
+    font-size: 13px;
+    margin-top: 20px;
+    border-top: 3px solid #c4633f;
+}
+
+#vtf-footer a {
+    color: #fff !important;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#vtf-footer a:hover {
+    color: #fdf0eb !important;
+}
+
+/* User tools */
+#user-tools {
+    color: #fff !important;
+}
+
+#user-tools a {
+    color: #fff !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+#user-tools a:hover {
+    border-bottom-color: #fff;
+}
+
+/* Changelist filter */
+#changelist-filter h2 {
+    background: #D97755 !important;
+    color: #fff !important;
+}
+
+#changelist-filter h3 {
+    color: #D97755 !important;
+}
+
+#changelist-filter li.selected a {
+    color: #D97755 !important;
+    font-weight: bold;
+}
+
+/* Tab focus */
+:focus-visible {
+    outline-color: #D97755;
+}
+
+/* Login page only */
+body.login {
+    background: #fafafa !important;
+}
+
+body.login #container {
+    width: 392px;
+    min-width: 392px;
+    margin: 102px auto 0;
+    border: 1px solid #e4e4e4;
+    border-radius: 3px;
+    background: #fff;
+    box-shadow: none;
+    overflow: hidden;
+}
+
+body.login #header {
+    display: block;
+    height: auto;
+    padding: 0;
+    background: #fff !important;
+}
+
+body.login #header #branding {
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+
+body.login .login-logo-strip {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 76px;
+    padding: 12px 25px;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+body.login .login-logo-strip .vtf-logo {
+    display: block;
+    width: 88px;
+    height: auto;
+    max-height: 52px;
+}
+
+body.login .login-titlebar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 58px;
+    background: #D97755;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+body.login .main {
+    display: block;
+    background: #fff;
+}
+
+body.login #content {
+    width: 100%;
+    padding: 30px 19px 0;
+    box-sizing: border-box;
+}
+
+body.login #content-main {
+    width: 100%;
+}
+
+body.login form {
+    margin: 0;
+}
+
+body.login .form-row {
+    padding: 0 0 17px;
+    border: 0;
+}
+
+body.login .form-row label {
+    display: block;
+    padding: 0 0 7px;
+    color: #333;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+body.login .form-row input {
+    width: 100%;
+    height: 32px;
+    min-height: 32px;
+    padding: 5px 8px;
+    box-sizing: border-box;
+    border: 1px solid #cfcfcf;
+    border-radius: 3px;
+    background: #fff;
+    color: #333;
+    font-size: 14px;
+}
+
+body.login .form-row input:focus {
+    border-color: #D97755;
+    outline: 1px solid rgba(217, 119, 85, 0.24);
+    outline-offset: 0;
+}
+
+body.login .submit-row {
+    margin: 6px 0 22px;
+    padding: 0;
+    text-align: center;
+    background: transparent;
+    border: 0;
+}
+
+body.login .submit-row input[type="submit"] {
+    min-width: 92px;
+    height: 34px;
+    padding: 0 16px;
+    border: 0 !important;
+    border-radius: 4px;
+    background: #D97755 !important;
+    color: #fff !important;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 34px;
+}
+
+body.login #vtf-footer {
+    margin: 0;
+    padding: 16px 12px;
+    border-top: 3px solid #c4633f;
+    background: #D97755;
+    color: #fff;
+    font-size: 13px;
+    line-height: 1.2;
+}
+
+body.login #vtf-footer a {
+    color: #fff !important;
+}
+
+body.login .errornote {
+    margin: 0 0 10px;
+    padding: 8px;
+    font-size: 13px;
+}
+
+@media (max-width: 440px) {
+    body:not(.login) #header {
+        min-height: 0;
+    }
+
+    body:not(.login) #branding {
+        display: block;
+        margin: 0;
+    }
+
+    body:not(.login) .admin-brand-card {
+        border: 0;
+    }
+
+    body:not(.login) .admin-logo-strip {
+        height: 64px;
+        padding: 8px 20px;
+    }
+
+    body:not(.login) .admin-logo-strip .vtf-logo {
+        width: 74px;
+    }
+
+    body:not(.login) .admin-titlebar {
+        min-height: 50px;
+        padding: 8px 20px;
+        font-size: 17px;
+    }
+
+    body:not(.login) #user-tools {
+        position: static;
+        display: block;
+        min-height: 0;
+        padding: 8px 20px;
+        background: #D97755;
+        text-align: left;
+    }
+
+    body.login #container {
+        width: calc(100vw - 32px);
+        min-width: 0;
+        margin: 48px 16px 0;
+    }
+
+    body.login .login-logo-strip {
+        height: 64px;
+        padding: 10px 20px;
+    }
+
+    body.login .login-logo-strip .vtf-logo {
+        width: 74px;
+    }
+
+    body.login .login-titlebar {
+        height: 50px;
+        font-size: 17px;
+    }
+}

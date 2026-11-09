@@ -1,0 +1,62 @@
+{% extends "admin/index.html" %}
+{% load static %}
+
+{% block extrastyle %}
+{{ block.super }}
+<link rel="stylesheet" href="{% static 'tariff_scraper/css/price_health_dashboard.css' %}">
+{% endblock %}
+
+{% block content %}
+{% if tariff_health_summary %}
+<div class="admin-health-summary">
+  <div class="admin-health-summary-header">
+    <div>
+      <p class="health-kicker">Tariff Scraper Operations</p>
+      <h2>Santé des prix</h2>
+    </div>
+    <a href="{% url 'admin:tariff_scraper_price_health_dashboard' %}">
+      Voir le tableau de bord complet
+    </a>
+  </div>
+  <div class="health-summary admin-health-cards">
+  <a href="{% url 'admin:tariff_scraper_price_health_dashboard' %}?status=green"
+     class="health-card health-card-green">
+    <div>
+      <div class="health-label">Prix OK</div>
+      <div class="health-count">{{ tariff_health_summary.counts.green }}</div>
+      <div class="health-card-note">Aucune action immédiate</div>
+    </div>
+    <span class="health-status-dot"></span>
+  </a>
+  <a href="{% url 'admin:tariff_scraper_price_health_dashboard' %}?status=orange"
+     class="health-card health-card-orange">
+    <div>
+      <div class="health-label">Non mis à jour</div>
+      <div class="health-count">{{ tariff_health_summary.counts.orange }}</div>
+      <div class="health-card-note">Scrape à relancer ou vérifier</div>
+    </div>
+    <span class="health-status-dot"></span>
+  </a>
+  <a href="{% url 'admin:tariff_scraper_price_health_dashboard' %}?status=missing_tariffs"
+     class="health-card health-card-blue">
+    <div>
+      <div class="health-label">Aucun tarif actif</div>
+      <div class="health-count">{{ tariff_health_summary.counts.missing_tariffs }}</div>
+      <div class="health-card-note">Tarifs à créer ou activer</div>
+    </div>
+    <span class="health-status-dot"></span>
+  </a>
+  <a href="{% url 'admin:tariff_scraper_price_health_dashboard' %}?status=red"
+     class="health-card health-card-red">
+    <div>
+      <div class="health-label">Problème détecté</div>
+      <div class="health-count">{{ tariff_health_summary.counts.red }}</div>
+      <div class="health-card-note">Incident à analyser</div>
+    </div>
+    <span class="health-status-dot"></span>
+  </a>
+  </div>
+</div>
+{% endif %}
+{{ block.super }}
+{% endblock %}

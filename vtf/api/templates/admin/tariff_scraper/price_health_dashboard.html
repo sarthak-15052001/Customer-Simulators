@@ -1,0 +1,164 @@
+{% extends "admin/base_site.html" %}
+{% load static %}
+
+{% block extrastyle %}
+{{ block.super }}
+<link rel="stylesheet" href="{% static 'tariff_scraper/css/price_health_dashboard.css' %}">
+{% endblock %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+  <a href="{% url 'admin:index' %}">Accueil</a>
+  &rsaquo; <a href="{% url 'admin:app_list' app_label='tariff_scraper' %}">Tariff scraper</a>
+  &rsaquo; Tableau de bord ; Santé des prix
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="health-dashboard">
+  <section class="health-hero">
+    <div>
+      <p class="health-kicker">Tariff Scraper Operations</p>
+      <h1>Santé des prix</h1>
+      <p class="health-intro">
+        Supervision des {{ summary.rows|length }} villages : fraîcheur du scrape,
+        tarifs actifs, validations en attente et incidents détectés.
+      </p>
+    </div>
+    <div class="health-hero-actions">
+      <a href="{% url 'admin:tariff_scraper_formatchangelog_changelist' %}">
+        Voir tous les incidents
+      </a>
+      <span>Seuil : {{ summary.stale_after_days }} jours</span>
+    </div>
+  </section>
+
+  <div class="health-summary">
+    <a href="?status=green{% if region_filter %}&region={{ region_filter }}{% endif %}"
+       class="health-card health-card-green{% if status_filter == 'green' %} active{% endif %}">
+      <div>
+        <div class="health-label">Prix OK</div>
+        <div class="health-count">{{ summary.counts.green }}</div>
+        <div class="health-card-note">Aucune action immédiate</div>
+      </div>
+      <span class="health-status-dot"></span>
+    </a>
+    <a href="?status=orange{% if region_filter %}&region={{ region_filter }}{% endif %}"
+       class="health-card health-card-orange{% if status_filter == 'orange' %} active{% endif %}">
+      <div>
+        <div class="health-label">Non mis à jour</div>
+        <div class="health-count">{{ summary.counts.orange }}</div>
+        <div class="health-card-note">Scrape à relancer ou vérifier</div>
+      </div>
+      <span class="health-status-dot"></span>
+    </a>
+    <a href="?status=missing_tariffs{% if region_filter %}&region={{ region_filter }}{% endif %}"
+       class="health-card health-card-blue{% if status_filter == 'missing_tariffs' %} active{% endif %}">
+      <div>
+        <div class="health-label">Aucun tarif actif</div>
+        <div class="health-count">{{ summary.counts.missing_tariffs }}</div>
+        <div class="health-card-note">Tarifs à créer ou activer</div>
+      </div>
+      <span class="health-status-dot"></span>
+    </a>
+    <a href="?status=red{% if region_filter %}&region={{ region_filter }}{% endif %}"
+       class="health-card health-card-red{% if status_filter == 'red' %} active{% endif %}">
+      <div>
+        <div class="health-label">Problème détecté</div>
+        <div class="health-count">{{ summary.counts.red }}</div>
+        <div class="health-card-note">Incident à analyser</div>
+      </div>
+      <span class="health-status-dot"></span>
+    </a>
+  </div>
+
+  <div class="health-filters">
+    <div class="health-meta">
+      Dernière génération : <strong>{{ summary.generated_at|date:"d/m/Y H:i" }}</strong>
+    </div>
+    <form method="get">
+      <label>Région
+        <select name="region" onchange="this.form.submit()">
+          <option value="">Toutes</option>
+          {% for r in regions %}
+          <option value="{{ r }}" {% if r == region_filter %}selected{% endif %}>{{ r }}</option>
+          {% endfor %}
+        </select>
+      </label>
+      {% if status_filter %}<input type="hidden" name="status" value="{{ status_filter }}">{% endif %}
+    </form>
+    {% if region_filter or status_filter %}
+    <a class="health-reset" href="{% url 'admin:tariff_scraper_price_health_dashboard' %}">Réinitialiser</a>
+    {% endif %}
+  </div>
+
+  <div class="health-table-shell">
+    <div class="health-table-title">
+      <div>
+        <h2>Villages surveillés</h2>
+        <span>{{ rows|length }} lignes affichées</span>
+      </div>
+    </div>
+    <table class="health-table">
+      <thead>
+        <tr>
+          <th>Statut</th>
+          <th>Village</th>
+          <th>Région</th>
+          <th>Dernier scrape</th>
+          <th>Tarifs actifs</th>
+          <th>Approbations</th>
+          <th>Raison</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in rows %}
+        <tr class="health-row-{{ row.status }}">
+          <td>
+            <span class="health-status-pill health-status-{{ row.status }}">
+              {% if row.status == "green" %}OK{% elif row.status == "orange" %}À vérifier{% elif row.status == "missing_tariffs" %}Sans tarif{% else %}Incident{% endif %}
+            </span>
+          </td>
+          <td class="health-village-cell">
+            <a href="{% url 'admin:tariff_scraper_villagetarif_changelist' %}?village_id__exact={{ row.village_id }}">
+              {{ row.village_name }}
+            </a>
+          </td>
+          <td>{{ row.region }}</td>
+          <td>{{ row.last_scraped_at|date:"d/m/Y H:i"|default:"Jamais" }}</td>
+          <td><strong>{{ row.active_tarif_count }}</strong></td>
+          <td>
+            {% if row.pending_approvals %}
+            <a class="health-badge health-badge-pending"
+               href="{% url 'admin:tariff_scraper_tariffapproval_changelist' %}?village_id__exact={{ row.village_id }}&status__exact=pending">
+              {{ row.pending_approvals }} en attente
+            </a>
+            {% else %}<span class="health-muted">No pending approval</span>{% endif %}
+          </td>
+          <td class="health-reason-cell">{{ row.reason }}</td>
+          <td class="health-action-cell">
+            {% if row.error_details %}
+            <a class="health-detail-error-btn"
+               title="Voir le détail de l'erreur"
+               aria-label="Voir le détail de l'erreur pour {{ row.village_name }}"
+               href="{% url 'admin:tariff_scraper_village_error_detail' village_id=row.village_id %}">
+              <span aria-hidden="true">🔎</span>
+            </a>
+            {% else %}
+            <span class="health-detail-error-btn health-detail-error-btn-disabled"
+                  title="No error details available"
+                  aria-label="No error details available for {{ row.village_name }}">
+              <span aria-hidden="true">—</span>
+            </span>
+            {% endif %}
+          </td>
+        </tr>
+        {% empty %}
+        <tr><td colspan="8" class="health-empty">Aucun village ne correspond à ce filtre.</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}

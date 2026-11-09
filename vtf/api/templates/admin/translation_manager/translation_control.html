@@ -1,0 +1,129 @@
+{% extends "admin/base_site.html" %}
+{% load static %}
+
+{% block extrastyle %}
+{{ block.super }}
+<link rel="stylesheet" href="{% static 'translation_manager/css/translation_control.css' %}">
+{% endblock %}
+
+{% block extrahead %}
+{{ block.super }}
+<script>
+  window.TRANSLATION_MANAGER_CONFIG = {
+    statusUrlTemplate: "{{ status_url_template|escapejs }}",
+    activeTaskId: "{{ active_job.task_id|default:''|escapejs }}",
+  };
+</script>
+<script src="{% static 'translation_manager/js/translation_control.js' %}" defer></script>
+{% endblock %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+  <a href="{% url 'admin:index' %}">Accueil</a>
+  &rsaquo; <a href="{% url 'admin:app_list' app_label='translation_manager' %}">Translation manager</a>
+  &rsaquo; <a href="{% url 'admin:translation_manager_translationsource_changelist' %}">Translation sources</a>
+  &rsaquo; Traduction automatique
+</div>
+{% endblock %}
+
+{% block content %}
+<div id="translation-control" class="translation-control">
+  <h1>Traduction automatique</h1>
+  <p class="translation-intro">
+    Chaque ligne de la table <code>TranslationSource</code> issue du catalogue est traduite
+    depuis le français vers la langue cible choisie, et
+    <strong>écrase</strong> la traduction précédente dans <code>TranslationEntry</code>.
+    Ce panneau permet de relancer manuellement une traduction, ou de traiter tout ce qui est
+    en attente ou périmé (texte source modifié depuis la dernière traduction).
+  </p>
+
+  {% if messages %}
+  <ul class="messagelist">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  <div class="translation-grid">
+    <section class="translation-card">
+      <h2>État actuel</h2>
+      <div class="translation-stats">
+        <div class="translation-stat">
+          <span class="translation-stat-value">{{ pending_count }}</span>
+          <span class="translation-stat-label">En attente</span>
+        </div>
+        <div class="translation-stat">
+          <span class="translation-stat-value">{{ failed_count }}</span>
+          <span class="translation-stat-label">Échouées</span>
+        </div>
+      </div>
+      <span class="translation-status-badge" id="translation-status-badge" data-status="{{ active_job.status|default:'idle' }}">
+        {{ active_job.status|default:"Inactif" }}
+      </span>
+      <div id="translation-summary"></div>
+    </section>
+
+    <section class="translation-card">
+      <h2>Lancer une traduction</h2>
+      <form method="post" action="{{ start_url }}">
+        {% csrf_token %}
+        <fieldset class="translation-fieldset">
+          <label class="translation-radio">
+            <input type="radio" name="mode" value="pending" checked>
+            Traiter uniquement les entrées en attente / périmées
+          </label>
+          <label class="translation-radio">
+            <input type="radio" name="mode" value="all">
+            Retraduire toutes les sources actives
+          </label>
+        </fieldset>
+        <div class="translation-field">
+          <label for="language">Langue cible</label>
+          <select name="language" id="language">
+            <option value="">Toutes les langues</option>
+            {% for language in languages %}
+            <option value="{{ language.id }}">{{ language.label }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <button type="submit" class="button default">Lancer</button>
+      </form>
+    </section>
+  </div>
+
+  <div class="translation-grid">
+    <section class="translation-card">
+      <h2>Langues cibles</h2>
+      <p>Les sources catalogue restent en français. Choisissez la langue cible à générer.</p>
+      <ul>
+        {% for language in languages %}
+        <li>{{ language.label }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+
+    <section class="translation-card">
+      <h2>Champs de modèles suivis</h2>
+      <p>
+        {{ registry_field_count }} champ(s) du catalogue enregistré(s) dans
+        <code>apps/translation_manager/services/registry.py</code>, répartis sur :
+      </p>
+      <ul>
+        {% for group, count in registry_groups %}
+        <li>{{ group }} — {{ count }} champ(s)</li>
+        {% endfor %}
+      </ul>
+      <p>
+        Ce bouton relit leur valeur actuelle en base et crée/actualise la ligne
+        <code>TranslationSource</code> correspondante — ce qui déclenche automatiquement
+        sa traduction.
+      </p>
+      <form method="post" action="{{ sync_url }}">
+        {% csrf_token %}
+        <button type="submit" class="button default">Synchroniser les champs de modèles</button>
+      </form>
+    </section>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,88 @@
+[
+  {
+    "model": "catalog.promo",
+    "pk": "pack",
+    "fields": {
+      "icon": "🎁",
+      "label": "Pack Surprise",
+      "description": "Village mystère · Non cumulable avec autres promos séjour",
+      "tag": "−35%",
+      "rate": "0.35",
+      "kind": "auto"
+    }
+  },
+  {
+    "model": "catalog.promo",
+    "pk": "premiere",
+    "fields": {
+      "icon": "⏰",
+      "label": "1ère Minute",
+      "description": "Réservation avant le 20/03 · Non cumulable avec autres promos séjour",
+      "tag": "jusqu'à −30%",
+      "rate": "0.30",
+      "kind": "auto"
+    }
+  },
+  {
+    "model": "catalog.promo",
+    "pk": "jeudi",
+    "fields": {
+      "icon": "🔥",
+      "label": "Promo du Jeudi",
+      "description": "Offre flash hebdo · Hors été · 7 nuits min · Non cumulable",
+      "tag": "−25%",
+      "rate": "0.25",
+      "kind": "auto"
+    }
+  },
+  {
+    "model": "catalog.promo",
+    "pk": "derniere",
+    "fields": {
+      "icon": "⚡",
+      "label": "Dernière Minute",
+      "description": "Disponibilités limitées · Départ proche · Non cumulable",
+      "tag": "−40%",
+      "rate": "0.40",
+      "kind": "auto"
+    }
+  }
+  ,
+  {
+    "model": "catalog.promo",
+    "pk": "soloParentChild",
+    "fields": {
+      "icon": "👩‍👦",
+      "label": "Parent solo — −50% tarif enfant",
+      "description": "Réduction automatique pour les familles monoparentales · Applicable sur le tarif enfant",
+      "tag": "−50%",
+      "rate": "0.50",
+      "kind": "auto"
+    }
+  }
+  ,
+  {
+    "model": "catalog.promo",
+    "pk": "fortnightStay",
+    "fields": {
+      "icon": "🌙",
+      "label": "Séjour Quinzaine",
+      "description": "Sélection de 14 nuits ou plus · 10% de remise sur le séjour",
+      "tag": "−10%",
+      "rate": "0.10",
+      "kind": "auto"
+    }
+  },
+  {
+    "model": "catalog.promo",
+    "pk": "derniere",
+    "fields": {
+      "icon": "⚡",
+      "label": "Dernière Minute",
+      "description": "Départ dans moins de 30 jours",
+      "tag": "−30%",
+      "rate": "0.30",
+      "kind": "auto"
+    }
+  }
+]

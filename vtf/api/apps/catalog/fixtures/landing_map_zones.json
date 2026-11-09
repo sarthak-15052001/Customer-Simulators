@@ -1,0 +1,444 @@
+[
+  {
+    "model": "catalog.landingmapzone",
+    "pk": 1,
+    "fields": {
+      "name": "Auvergne-Rhône-Alpes",
+      "villages": [
+        {
+          "id": 4,
+          "villageId": "savines",
+          "href": "https://www.vtf-vacances.com/fr_FR/summer/village-vacances/hautes-alpes/savines-le-lac/le-pigneroux",
+          "title": "Le Pigneroux**",
+          "place": "savines le lac",
+          "coords": {
+            "x": 462.0,
+            "y": 420.0
+          }
+        },
+        {
+          "id": 6,
+          "villageId": "saint-sauves",
+          "href": "https://www.vtf-vacances.com/fr_FR/summer/village-vacances/puy-de-dome/saint-sauves-d-auvergne/le-domaine-des-puys",
+          "title": "Le Domaine des Puys",
+          "place": "saint sauves d'auvergne",
+          "coords": {
+            "x": 315.0,
+            "y": 320.0
+          }
+        },
+        {
+          "id": 9,
+          "villageId": "areches",
+          "href": "https://www.vtf-vacances.com/fr_FR/summer/village-vacances/savoie/areches-beaufort/le-rafour",
+          "title": "Le Rafour** - Arêches Beaufort",
+          "place": "arêches beaufort",
+          "coords": {
+            "x": 465.0,
+            "y": 337.0
+          }
+        },
+        {
+          "id": 14,
+          "villageId": "chamonix",
+          "href": "https://www.vtf-vacances.com/fr_FR/summer/village-vacances/haute-savoie/chamonix/les-econtres",
+          "title": "Les Econtres*** - Chamonix",
+          "place": "chamonix",
+          "coords": {
+            "x": 491.0,
+            "y": 309.0
+          }
+        },
+        {
+          "id": 15,
+          "villageId": "montgenevre",
+          "href": "https://www.vtf-vacances.com/fr_FR/summer/village-vacances/hautes-alpes/montgenevre/le-grand-hotel",
+          "title": "Le Grand Hôtel*** - Montgenèvre",
+          "place": "montgenèvre",
+          "coords": {
+            "x": 488.0,
+            "y": 382.0
+          }
+        },
+        {
+          "id": 16,
+          "villageId": "doucy",
+          "href": "https://www.vtf-vacances.com/fr_FR/summer/village-vacances/savoie/doucy-combebouviere/les-carlines",
+          "title": "Les Carlines*** - Doucy Valmorel",
+          "place": "doucy combelouvière",
+          "coords": {
+            "x": 472.0,
+            "y": 353.0
+          }
+        },
+        {
+          "id": 17,
+          "villageId": "arvieux",
+          "href": "https://www.vtf-vacances.com/fr_FR/summer/village-vacances/hautes-alpes/arvieux/les-esquirousses",
+          "title": "Les Esquirousses*** - Arvieux en Queyras",
+          "place": "arvieux",
+          "coords": {
+            "x": 494.0,
+            "y": 369.0
+          }
+        },
+        {
+          "id": 18,
+          "villageId": "la-plagne",
+          "href": "https://www.vtf-vacances.com/fr_FR/summer/village-vacances/savoie/la-plagne-montalbert/le-dou-de-la-ramaz",
+          "title": "Dou de la Ramaz*** - Plagne Montalbert",
+          "place": "la plagne montalbert",
+          "coords": {
+            "x": 476.0,
+            "y": 340.0
+          }
+        },
+        {
+          "id": 19,
+          "villageId": "alpe-dhuez",
+          "href": "https://www.vtf-vacances.com/fr_FR/summer/village-vacances/isere/alpe-d-huez/le-balcon-de-l-alpe",
+          "title": "Le Balcon de l'Alpe***",
+          "place": "alpe d'huez",
+          "coords": {
+            "x": 466.0,
+            "y": 370.0
+          }
+        },
+        {
+          "id": 20,
+          "villageId": "montricher-albanne",
+          "href": "https://www.vtf-vacances.com/fr_FR/summer/village-vacances/savoie/montricher-albanne/les-balcons-de-maurienne",
+          "title": "Les Balcons de Maurienne*** - Les Karellis",
+          "place": "montricher-albanne",
+          "coords": {
+            "x": 480.0,
+            "y": 360.0
+          }
+        },
+        {
+          "id": 206,
+          "villageId": "font-durle",
+          "href": "https://www.vtf-vacances.com/fr_FR/summer/village-vacances/drome/bouvante/font-urle",
+          "title": "Font d'Urle*** - Vercors",
+          "place": "bouvante",
+          "coords": {
+            "x": 426.0,
+            "y": 378.0
+          }
+        }
+      ]
+    }
+  },
+  {
+    "model": "catalog.landingmapzone",
+    "pk": 2,
+    "fields": {
+      "name": "Bourgogne-Franche-Comté",
+      "villages": [
+        {
+          "id": 8,
+          "villageId": "metabief",
+          "href": "https://www.vtf-vacances.com/fr_FR/summer/village-vacances/doubs/metabief/le-bief-rouge",
+          "title": "Le Bief Rouge** - Jura",
+          "place": "métabief",
+          "coords": {
+            "x": 454.0,
+            "y": 288.0
+          }
+        }
+      ]
+    }
+  },
+  {
+    "model": "catalog.landingmapzone",
+    "pk": 3,
+    "fields": {
+      "name": "Bretagne",
+      "villages": [
+        {
+          "id": 11,
+          "villageId": "saint-cast",
+          "href": "https://www.vtf-vacances.com/fr_FR/summer/village-vacances/cotes-d-armor/saint-cast-le-guildo/l-hotel-des-bains",
+          "title": "Hôtel des Bains*** - St Cast",
+          "place": "saint cast le guildo",
+          "coords": {
+            "x": 105.0,
+            "y": 162.0
+          }
+        },
+        {
+          "id": 24,
+          "villageId": "riec",
+          "href": "https://www.vtf-vacances.com/fr_FR/summer/village-vacances/finistere/riec-sur-belon/ker-belen",
+          "title": "Ker Belen*** - Riec-sur-Bélon",
+          "place": "riec sur bélon",
+          "coords": {
+            "x": 74.0,
+            "y": 194.0
+          }
+        }
+      ]
+    }
+  },
+  {
+    "model": "catalog.landingmapzone",
+    "pk": 4,
+    "fields": {
+      "name": "Centre-Val de Loire",
+      "villages": []
+    }
+  },
+  {
+    "model": "catalog.landingmapzone",
+    "pk": 5,
+    "fields": {
+      "name": "Corse",
+      "villages": []
+    }
+  },
+  {
+    "model": "catalog.landingmapzone",
+    "pk": 6,
+    "fields": {
+      "name": "Grand-Est",
+      "villages": [
+        {
+          "id": 7,
+          "villageId": "soultzeren",
+          "href": "https://www.vtf-vacances.com/fr_FR/summer/village-vacances/haut-rhin/soultzeren/les-fougeres",
+          "title": "Les Fougères*** - Vosges",
+          "place": "soultzeren",
+          "coords": {
+            "x": 510.0,
+            "y": 222.0
+          }
+        }
+      ]
+    }
+  },
+  {
+    "model": "catalog.landingmapzone",
+    "pk": 7,
+    "fields": {
+      "name": "Hauts-de-France",
+      "villages": []
+    }
+  },
+  {
+    "model": "catalog.landingmapzone",
+    "pk": 8,
+    "fields": {
+      "name": "Île-de-France",
+      "villages": []
+    }
+  },
+  {
+    "model": "catalog.landingmapzone",
+    "pk": 9,
+    "fields": {
+      "name": "Normandie",
+      "villages": [
+        {
+          "id": 34,
+          "villageId": "blainville",
+          "href": "https://www.vtf-vacances.com/fr_FR/summer/village-vacances/manche/blainville-sur-mer/le-senequet",
+          "title": "Le Sénéquet - Blainville-sur-Mer",
+          "place": "blainville sur mer",
+          "coords": {
+            "x": 148.0,
+            "y": 128.0
+          }
+        }
+      ]
+    }
+  },
+  {
+    "model": "catalog.landingmapzone",
+    "pk": 10,
+    "fields": {
+      "name": "Nouvelle Aquitaine",
+      "villages": [
+        {
+          "id": 1,
+          "villageId": "biarritz",
+          "href": "https://www.vtf-vacances.com/fr_FR/summer/village-vacances/pyrenees-atlantiques/biarritz/le-domaine-de-francon",
+          "title": "Le Domaine de Françon***",
+          "place": "biarritz",
+          "coords": {
+            "x": 96.0,
+            "y": 474.0
+          }
+        },
+        {
+          "id": 23,
+          "villageId": "lacanau",
+          "href": "https://www.vtf-vacances.com/fr_FR/summer/village-vacances/gironde/lacanau/la-forestiere",
+          "title": "La Forestière*** - Lacanau Océan",
+          "place": "lacanau",
+          "coords": {
+            "x": 128.0,
+            "y": 318.0
+          }
+        },
+        {
+          "id": 25,
+          "villageId": "biscarrosse",
+          "href": "https://www.vtf-vacances.com/fr_FR/summer/village-vacances/landes/biscarrosse/la-jaougue-soule",
+          "title": "La Jaougue Soule*** - Biscarrosse",
+          "place": "biscarrosse",
+          "coords": {
+            "x": 132.0,
+            "y": 360.0
+          }
+        },
+        {
+          "id": 26,
+          "villageId": "singleyrac",
+          "href": "https://www.vtf-vacances.com/fr_FR/summer/village-vacances/dordogne/singleyrac/le-domaine-du-peyrichoux",
+          "title": "Domaine du Peyrichoux*** - Singleyrac",
+          "place": "singleyrac",
+          "coords": {
+            "x": 216.0,
+            "y": 378.0
+          }
+        },
+        {
+          "id": 28,
+          "villageId": "carcans-les-bruyeres",
+          "href": "https://www.vtf-vacances.com/fr_FR/summer/village-vacances/gironde/carcans/les-bruyeres",
+          "title": "Les Bruyères - Carcans",
+          "place": "carcans",
+          "coords": {
+            "x": 124.0,
+            "y": 334.0
+          }
+        },
+        {
+          "id": 33,
+          "villageId": "carcans-les-oyats",
+          "href": "https://www.vtf-vacances.com/fr_FR/summer/village-vacances/gironde/carcans/les-oyats",
+          "title": "Les Oyats - Carcans",
+          "place": "carcans",
+          "coords": {
+            "x": 126.0,
+            "y": 348.0
+          }
+        }
+      ]
+    }
+  },
+  {
+    "model": "catalog.landingmapzone",
+    "pk": 11,
+    "fields": {
+      "name": "Occitanie",
+      "villages": [
+        {
+          "id": 21,
+          "villageId": "vernet",
+          "href": "https://www.vtf-vacances.com/fr_FR/summer/village-vacances/pyrenees-orientales/vernet-les-bains/clair-canigou",
+          "title": "Clair Canigou*** - Vernet-les-Bains",
+          "place": "vernet les bains",
+          "coords": {
+            "x": 354.0,
+            "y": 500.0
+          }
+        },
+        {
+          "id": 30,
+          "villageId": "agde",
+          "href": "https://www.vtf-vacances.com/fr_FR/summer/village-vacances/herault/agde/le-domaine-d-agde",
+          "title": "Le Domaine d'Agde*** - Agde",
+          "place": "agde",
+          "coords": {
+            "x": 340.0,
+            "y": 462.0
+          }
+        }
+      ]
+    }
+  },
+  {
+    "model": "catalog.landingmapzone",
+    "pk": 12,
+    "fields": {
+      "name": "Pays de la Loire",
+      "villages": []
+    }
+  },
+  {
+    "model": "catalog.landingmapzone",
+    "pk": 13,
+    "fields": {
+      "name": "Provence-Alpes-Côte d'Azur",
+      "villages": [
+        {
+          "id": 5,
+          "villageId": "praloup",
+          "href": "https://www.vtf-vacances.com/fr_FR/summer/village-vacances/alpes-de-haute-provence/uvernet-fours/l-ouka",
+          "title": "L'Ouka*** - Praloup",
+          "place": "uvernet fours",
+          "coords": {
+            "x": 477.0,
+            "y": 412.0
+          }
+        },
+        {
+          "id": 12,
+          "villageId": "cereste",
+          "href": "https://www.vtf-vacances.com/fr_FR/summer/village-vacances/alpes-de-haute-provence/cereste/le-domaine-du-grand-luberon",
+          "title": "Domaine du Grand Luberon*** - Céreste",
+          "place": "céreste",
+          "coords": {
+            "x": 442.0,
+            "y": 430.0
+          }
+        },
+        {
+          "id": 13,
+          "villageId": "le-sauze",
+          "href": "https://www.vtf-vacances.com/fr_FR/summer/village-vacances/alpes-de-haute-provence/le-sauze-barcelonnette/les-balcons-du-sauze",
+          "title": "Les Balcons du Sauze*** - Le Sauze",
+          "place": "le sauze/barcelonnette",
+          "coords": {
+            "x": 486.0,
+            "y": 395.0
+          }
+        },
+        {
+          "id": 27,
+          "villageId": "bandol",
+          "href": "https://www.vtf-vacances.com/fr_FR/summer/village-vacances/var/bandol/clairefont",
+          "title": "Clairefont*** - Bandol",
+          "place": "bandol",
+          "coords": {
+            "x": 489.0,
+            "y": 458.0
+          }
+        },
+        {
+          "id": 29,
+          "villageId": "bedoin",
+          "href": "https://www.vtf-vacances.com/fr_FR/summer/village-vacances/vaucluse/bedoin/les-florans",
+          "title": "Les Florans*** - Bédoin Ventoux",
+          "place": "bédoin",
+          "coords": {
+            "x": 410.0,
+            "y": 420.0
+          }
+        },
+        {
+          "id": 82,
+          "villageId": "sainte-maxime",
+          "href": "https://www.vtf-vacances.com/fr_FR/summer/village-vacances/var/sainte-maxime/golfe-de-saint-tropez",
+          "title": "Golfe de Saint Tropez*** - Ste Maxime",
+          "place": "sainte maxime",
+          "coords": {
+            "x": 524.0,
+            "y": 424.0
+          }
+        }
+      ]
+    }
+  }
+]

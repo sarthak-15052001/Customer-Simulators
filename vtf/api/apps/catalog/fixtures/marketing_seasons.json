@@ -1,0 +1,50 @@
+[
+  {
+    "model": "catalog.marketingseasons",
+    "pk": "printemps",
+    "fields": {
+      "label": "Printemps",
+      "icon": "🌸",
+      "default_date": "2026-04-15",
+      "start_date": "2026-03-01",
+      "end_date": "2026-05-31",
+      "sort_order": 1
+    }
+  },
+  {
+    "model": "catalog.marketingseasons",
+    "pk": "ete",
+    "fields": {
+      "label": "Été",
+      "icon": "☀️",
+      "default_date": "2026-07-15",
+      "start_date": "2026-06-01",
+      "end_date": "2026-08-31",
+      "sort_order": 2
+    }
+  },
+  {
+    "model": "catalog.marketingseasons",
+    "pk": "automne",
+    "fields": {
+      "label": "Automne",
+      "icon": "🍂",
+      "default_date": "2026-10-10",
+      "start_date": "2026-09-01",
+      "end_date": "2026-11-30",
+      "sort_order": 3
+    }
+  },
+  {
+    "model": "catalog.marketingseasons",
+    "pk": "hiver",
+    "fields": {
+      "label": "Hiver",
+      "icon": "❄️",
+      "default_date": "2026-01-20",
+      "start_date": "2025-12-01",
+      "end_date": "2026-02-28",
+      "sort_order": 4
+    }
+  }
+]

@@ -1,0 +1,183 @@
+{% extends "admin/base_site.html" %}
+{% load static %}
+
+{% block extrastyle %}
+{{ block.super }}
+<link rel="stylesheet" href="{% static 'scraper/css/scraper_control.css' %}">
+{% endblock %}
+
+{% block extrahead %}
+{{ block.super }}
+<script>
+  window.SCRAPER_CONFIG = {
+    statusUrlTemplate: "{{ status_url_template|escapejs }}",
+    activeJobId: "{{ active_job.id|default:''|escapejs }}",
+    queryJobId: "{{ request.GET.job|default:''|escapejs }}",
+  };
+</script>
+<script src="{% static 'scraper/js/scraper_control.js' %}" defer></script>
+{% endblock %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+  <a href="{% url 'admin:index' %}">Accueil</a>
+  &rsaquo; <a href="{% url 'admin:app_list' app_label='scraper' %}">Scraper</a>
+  &rsaquo; <a href="{% url 'admin:scraper_scrapingjob_changelist' %}">Scraping jobs</a>
+  &rsaquo; Contrôle du scraping
+</div>
+{% endblock %}
+
+{% block content %}
+<div id="scraper-control" class="scraper-control">
+  <h1>Scraper d'activités</h1>
+  <p class="scraper-intro">
+    Lancez un scraping depuis l'admin (même logique que
+    <code>POST /api/v3/admin/scraper/activities</code>).
+    Sources disponibles&nbsp;: Google Places, TripAdvisor et Office de tourisme local.
+  </p>
+
+  {% if messages %}
+  <ul class="messagelist">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  <div class="scraper-grid">
+    <section class="scraper-card scraper-card-form">
+      <h2>Nouveau scraping</h2>
+      <form method="post" action="{{ start_url }}" id="scraper-start-form">
+        {% csrf_token %}
+
+        <fieldset class="scraper-fieldset">
+          <legend>Cible</legend>
+          <label class="scraper-radio">
+            <input type="radio" name="target" value="village" checked data-target-toggle="village">
+            Village
+          </label>
+          <label class="scraper-radio">
+            <input type="radio" name="target" value="region" data-target-toggle="region">
+            Région
+          </label>
+        </fieldset>
+
+        <div class="scraper-field" id="field-village">
+          <label for="village_id">Village</label>
+          <select name="village_id" id="village_id">
+            <option value="">— Choisir un village —</option>
+            {% for village in villages %}
+            <option value="{{ village.id }}">{{ village.nom }} ({{ village.region }})</option>
+            {% endfor %}
+          </select>
+        </div>
+
+        <div class="scraper-field scraper-hidden" id="field-region">
+          <label for="region_key">Région</label>
+          <select name="region_key" id="region_key">
+            <option value="">— Choisir une région —</option>
+            {% for region in regions %}
+            <option value="{{ region.key }}">{{ region.label }}</option>
+            {% endfor %}
+          </select>
+        </div>
+
+        <fieldset class="scraper-fieldset">
+          <legend>Sources</legend>
+          {% for source in sources %}
+          <label class="scraper-checkbox">
+            <input type="checkbox" name="sources" value="{{ source }}" checked>
+            {% if source == "google_places" %}Google Places
+            {% elif source == "tripadvisor" %}TripAdvisor
+            {% elif source == "ot_local" %}Office de tourisme (local)
+            {% else %}{{ source }}{% endif %}
+          </label>
+          {% endfor %}
+        </fieldset>
+
+        <div class="scraper-field">
+          <label for="radius_km">Rayon (km)</label>
+          <input type="number" name="radius_km" id="radius_km" value="30" min="1" max="100">
+        </div>
+
+        <div class="scraper-field">
+          <label for="max_results">Résultats max</label>
+          <input type="number" name="max_results" id="max_results" value="50" min="1" max="500">
+        </div>
+
+        <div class="scraper-actions">
+          <button type="submit" class="button scraper-btn-start" id="btn-start"{% if active_job %} disabled{% endif %}>
+            Démarrer le scraping
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <section class="scraper-card scraper-card-status">
+      <h2>Statut en cours</h2>
+      <div id="job-status-panel" class="job-status-panel{% if not active_job %} job-status-idle{% endif %}">
+        <p class="job-status-label" id="job-status-label">
+          {% if active_job %}
+          Job actif : <strong id="job-id-display">{{ active_job.id }}</strong>
+          {% else %}
+          Aucun scraping en cours.
+          {% endif %}
+        </p>
+        <div class="job-status-badge" id="job-status-badge" data-status="{{ active_job.status|default:'idle' }}">
+          {{ active_job.get_status_display|default:"Inactif" }}
+        </div>
+        <dl class="job-status-details" id="job-status-details">
+          {% if active_job %}
+          <div><dt>Cible</dt><dd>{{ active_job.target_type }} — {{ active_job.target_id }}</dd></div>
+          <div><dt>Sources</dt><dd>{{ active_job.sources|join:", " }}</dd></div>
+          <div><dt>Rayon</dt><dd>{{ active_job.radius_km }} km</dd></div>
+          <div><dt>Résultats max</dt><dd>{{ active_job.max_results }}</dd></div>
+          {% endif %}
+        </dl>
+        <div class="job-summary" id="job-summary"></div>
+      </div>
+
+      <form method="post" action="{{ stop_url }}" id="scraper-stop-form">
+        {% csrf_token %}
+        <input type="hidden" name="job_id" id="stop-job-id" value="{{ active_job.id|default:'' }}">
+        <button
+          type="submit"
+          class="button scraper-btn-stop"
+          id="btn-stop"
+          {% if not active_job %}disabled{% endif %}
+        >
+          Arrêter le scraping
+        </button>
+      </form>
+    </section>
+  </div>
+
+  <section class="scraper-card scraper-card-history">
+    <h2>Jobs récents</h2>
+    <table class="scraper-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Cible</th>
+          <th>Statut</th>
+          <th>Sources</th>
+          <th>Créé le</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for job in recent_jobs %}
+        <tr data-job-id="{{ job.id }}">
+          <td><a href="{% url 'admin:scraper_scrapingjob_change' job.id %}">{{ job.id }}</a></td>
+          <td>{{ job.target_type }} / {{ job.target_id }}</td>
+          <td><span class="status-pill status-{{ job.status }}">{{ job.get_status_display }}</span></td>
+          <td>{{ job.sources|join:", " }}</td>
+          <td>{{ job.created_at|date:"d/m/Y H:i" }}</td>
+        </tr>
+        {% empty %}
+        <tr><td colspan="5">Aucun job pour le moment.</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </section>
+</div>
+{% endblock %}

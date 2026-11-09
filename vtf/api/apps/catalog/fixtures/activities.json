@@ -1,0 +1,1727 @@
+[
+  {
+    "model": "catalog.activity",
+    "pk": 1,
+    "fields": {
+      "code": "free:bn:gr34",
+      "region": "Bretagne / Normandie",
+      "kind": "free",
+      "nom": "Balade sur les sentiers côtiers GR34",
+      "type": "🥾",
+      "price_adult": 0,
+      "price_child": 0,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 2,
+    "fields": {
+      "code": "free:bn:market",
+      "region": "Bretagne / Normandie",
+      "kind": "free",
+      "nom": "Marché local breton",
+      "type": "🛒",
+      "price_adult": 0,
+      "price_child": 0,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 3,
+    "fields": {
+      "code": "free:bn:sea",
+      "region": "Bretagne / Normandie",
+      "kind": "free",
+      "nom": "Fête de la mer (saison estivale)",
+      "type": "🎉",
+      "price_adult": 0,
+      "price_child": 0,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 4,
+    "fields": {
+      "code": "free:bn:fisher",
+      "region": "Bretagne / Normandie",
+      "kind": "free",
+      "nom": "Visite des villages de pêcheurs",
+      "type": "🏘️",
+      "price_adult": 0,
+      "price_child": 0,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 5,
+    "fields": {
+      "code": "free:bn:beach",
+      "region": "Bretagne / Normandie",
+      "kind": "free",
+      "nom": "Plage libre",
+      "type": "🏖️",
+      "price_adult": 0,
+      "price_child": 0,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 6,
+    "fields": {
+      "code": "free:al:forest",
+      "region": "Aquitaine / Landes",
+      "kind": "free",
+      "nom": "Balade en forêt des Landes",
+      "type": "🌲",
+      "price_adult": 0,
+      "price_child": 0,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 7,
+    "fields": {
+      "code": "free:al:market",
+      "region": "Aquitaine / Landes",
+      "kind": "free",
+      "nom": "Marché des producteurs locaux",
+      "type": "🛒",
+      "price_adult": 0,
+      "price_child": 0,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 8,
+    "fields": {
+      "code": "free:al:fest",
+      "region": "Aquitaine / Landes",
+      "kind": "free",
+      "nom": "Fête de la côte basque (été)",
+      "type": "🎉",
+      "price_adult": 0,
+      "price_child": 0,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 9,
+    "fields": {
+      "code": "free:al:biarritz",
+      "region": "Aquitaine / Landes",
+      "kind": "free",
+      "nom": "Visite du vieux Biarritz",
+      "type": "🏘️",
+      "price_adult": 0,
+      "price_child": 0,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 10,
+    "fields": {
+      "code": "free:al:beach",
+      "region": "Aquitaine / Landes",
+      "kind": "free",
+      "nom": "Plage libre (Atlantique)",
+      "type": "🏖️",
+      "price_adult": 0,
+      "price_child": 0,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 11,
+    "fields": {
+      "code": "free:mp:coast",
+      "region": "Méditerranée / PACA",
+      "kind": "free",
+      "nom": "Balade sur les sentiers de la côte",
+      "type": "🥾",
+      "price_adult": 0,
+      "price_child": 0,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 12,
+    "fields": {
+      "code": "free:mp:market",
+      "region": "Méditerranée / PACA",
+      "kind": "free",
+      "nom": "Marché provençal",
+      "type": "🛒",
+      "price_adult": 0,
+      "price_child": 0,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 13,
+    "fields": {
+      "code": "free:mp:fest",
+      "region": "Méditerranée / PACA",
+      "kind": "free",
+      "nom": "Festival local (été)",
+      "type": "🎉",
+      "price_adult": 0,
+      "price_child": 0,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 14,
+    "fields": {
+      "code": "free:mp:heritage",
+      "region": "Méditerranée / PACA",
+      "kind": "free",
+      "nom": "Visite du patrimoine historique",
+      "type": "🏛️",
+      "price_adult": 0,
+      "price_child": 0,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 15,
+    "fields": {
+      "code": "free:mp:beach",
+      "region": "Méditerranée / PACA",
+      "kind": "free",
+      "nom": "Plage libre",
+      "type": "🏖️",
+      "price_adult": 0,
+      "price_child": 0,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 16,
+    "fields": {
+      "code": "free:as:hike",
+      "region": "Alpes / Savoie",
+      "kind": "free",
+      "nom": "Randonnée balisée (toutes saisons)",
+      "type": "🥾",
+      "price_adult": 0,
+      "price_child": 0,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 17,
+    "fields": {
+      "code": "free:as:market",
+      "region": "Alpes / Savoie",
+      "kind": "free",
+      "nom": "Marché de producteurs savoyards",
+      "type": "🛒",
+      "price_adult": 0,
+      "price_child": 0,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 18,
+    "fields": {
+      "code": "free:as:fest",
+      "region": "Alpes / Savoie",
+      "kind": "free",
+      "nom": "Fête du village (été)",
+      "type": "🎉",
+      "price_adult": 0,
+      "price_child": 0,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 19,
+    "fields": {
+      "code": "free:as:alpine",
+      "region": "Alpes / Savoie",
+      "kind": "free",
+      "nom": "Visite du patrimoine alpin",
+      "type": "🏔️",
+      "price_adult": 0,
+      "price_child": 0,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 20,
+    "fields": {
+      "code": "free:as:lake",
+      "region": "Alpes / Savoie",
+      "kind": "free",
+      "nom": "Balade lac ou glacier",
+      "type": "🏞️",
+      "price_adult": 0,
+      "price_child": 0,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 21,
+    "fields": {
+      "code": "free:ads:hike",
+      "region": "Alpes du Sud",
+      "kind": "free",
+      "nom": "Randonnée en montagne",
+      "type": "🥾",
+      "price_adult": 0,
+      "price_child": 0,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 22,
+    "fields": {
+      "code": "free:ads:market",
+      "region": "Alpes du Sud",
+      "kind": "free",
+      "nom": "Marché provençal de montagne",
+      "type": "🛒",
+      "price_adult": 0,
+      "price_child": 0,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 23,
+    "fields": {
+      "code": "free:ads:fest",
+      "region": "Alpes du Sud",
+      "kind": "free",
+      "nom": "Festival culturel local",
+      "type": "🎉",
+      "price_adult": 0,
+      "price_child": 0,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 24,
+    "fields": {
+      "code": "free:ads:villages",
+      "region": "Alpes du Sud",
+      "kind": "free",
+      "nom": "Visite villages perchés",
+      "type": "🏘️",
+      "price_adult": 0,
+      "price_child": 0,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 25,
+    "fields": {
+      "code": "free:ads:nature",
+      "region": "Alpes du Sud",
+      "kind": "free",
+      "nom": "Balade nature",
+      "type": "🌿",
+      "price_adult": 0,
+      "price_child": 0,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 26,
+    "fields": {
+      "code": "free:mcj:volcano",
+      "region": "Massif Central / Jura",
+      "kind": "free",
+      "nom": "Balade volcans d'Auvergne",
+      "type": "🌋",
+      "price_adult": 0,
+      "price_child": 0,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 27,
+    "fields": {
+      "code": "free:mcj:market",
+      "region": "Massif Central / Jura",
+      "kind": "free",
+      "nom": "Marché artisanal local",
+      "type": "🛒",
+      "price_adult": 0,
+      "price_child": 0,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 28,
+    "fields": {
+      "code": "free:mcj:medieval",
+      "region": "Massif Central / Jura",
+      "kind": "free",
+      "nom": "Fête médiévale (été)",
+      "type": "🎉",
+      "price_adult": 0,
+      "price_child": 0,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 29,
+    "fields": {
+      "code": "free:mcj:heritage",
+      "region": "Massif Central / Jura",
+      "kind": "free",
+      "nom": "Visite du patrimoine auvergnat",
+      "type": "🏛️",
+      "price_adult": 0,
+      "price_child": 0,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 30,
+    "fields": {
+      "code": "free:mcj:nature",
+      "region": "Massif Central / Jura",
+      "kind": "free",
+      "nom": "Balade nature forêt / lacs",
+      "type": "🌲",
+      "price_adult": 0,
+      "price_child": 0,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 31,
+    "fields": {
+      "code": "free:cp:luberon",
+      "region": "Campagne / Provence",
+      "kind": "free",
+      "nom": "Balade dans le Luberon ou le Ventoux",
+      "type": "🥾",
+      "price_adult": 0,
+      "price_child": 0,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 32,
+    "fields": {
+      "code": "free:cp:market",
+      "region": "Campagne / Provence",
+      "kind": "free",
+      "nom": "Marché provençal",
+      "type": "🛒",
+      "price_adult": 0,
+      "price_child": 0,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 33,
+    "fields": {
+      "code": "free:cp:lavande",
+      "region": "Campagne / Provence",
+      "kind": "free",
+      "nom": "Festival de la lavande (juin-juil.)",
+      "type": "💜",
+      "price_adult": 0,
+      "price_child": 0,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 34,
+    "fields": {
+      "code": "free:cp:villages",
+      "region": "Campagne / Provence",
+      "kind": "free",
+      "nom": "Visite villages de Provence",
+      "type": "🏘️",
+      "price_adult": 0,
+      "price_child": 0,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 35,
+    "fields": {
+      "code": "free:cp:garrigue",
+      "region": "Campagne / Provence",
+      "kind": "free",
+      "nom": "Balade nature garrigue",
+      "type": "🌿",
+      "price_adult": 0,
+      "price_child": 0,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 36,
+    "fields": {
+      "code": "free:op:hike",
+      "region": "Occitanie / Pyrénées",
+      "kind": "free",
+      "nom": "Randonnée Pyrénées",
+      "type": "🥾",
+      "price_adult": 0,
+      "price_child": 0,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 37,
+    "fields": {
+      "code": "free:op:market",
+      "region": "Occitanie / Pyrénées",
+      "kind": "free",
+      "nom": "Marché catalan",
+      "type": "🛒",
+      "price_adult": 0,
+      "price_child": 0,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 38,
+    "fields": {
+      "code": "free:op:fest",
+      "region": "Occitanie / Pyrénées",
+      "kind": "free",
+      "nom": "Festival local (été)",
+      "type": "🎉",
+      "price_adult": 0,
+      "price_child": 0,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 39,
+    "fields": {
+      "code": "free:op:medieval",
+      "region": "Occitanie / Pyrénées",
+      "kind": "free",
+      "nom": "Visite patrimoine médiéval",
+      "type": "🏰",
+      "price_adult": 0,
+      "price_child": 0,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 40,
+    "fields": {
+      "code": "free:op:gorges",
+      "region": "Occitanie / Pyrénées",
+      "kind": "free",
+      "nom": "Balade rivière / gorges",
+      "type": "🏞️",
+      "price_adult": 0,
+      "price_child": 0,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 41,
+    "fields": {
+      "code": "paid:bn:oceanopolis",
+      "region": "Bretagne / Normandie",
+      "kind": "paid",
+      "nom": "Océanopolis Brest",
+      "type": "🐠",
+      "price_adult": 22,
+      "price_child": 15,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 42,
+    "fields": {
+      "code": "paid:bn:stmalo",
+      "region": "Bretagne / Normandie",
+      "kind": "paid",
+      "nom": "Aquarium de Saint-Malo",
+      "type": "🐠",
+      "price_adult": 18,
+      "price_child": 13,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 43,
+    "fields": {
+      "code": "paid:bn:msm",
+      "region": "Bretagne / Normandie",
+      "kind": "paid",
+      "nom": "Mont-Saint-Michel",
+      "type": "🏛",
+      "price_adult": 11,
+      "price_child": 0,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 44,
+    "fields": {
+      "code": "paid:bn:kayak",
+      "region": "Bretagne / Normandie",
+      "kind": "paid",
+      "nom": "Kayak de mer (2h)",
+      "type": "🏄",
+      "price_adult": 35,
+      "price_child": 25,
+      "saisons": [
+        "ete",
+        "vs"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 45,
+    "fields": {
+      "code": "paid:bn:surf",
+      "region": "Bretagne / Normandie",
+      "kind": "paid",
+      "nom": "Cours de surf (2h)",
+      "type": "🏄",
+      "price_adult": 40,
+      "price_child": 35,
+      "saisons": [
+        "ete",
+        "vs"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 46,
+    "fields": {
+      "code": "paid:al:biarritz",
+      "region": "Aquitaine / Landes",
+      "kind": "paid",
+      "nom": "Aquarium de Biarritz",
+      "type": "🐠",
+      "price_adult": 17,
+      "price_child": 11,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 47,
+    "fields": {
+      "code": "paid:al:pilar",
+      "region": "Aquitaine / Landes",
+      "kind": "paid",
+      "nom": "Dune du Pilat",
+      "type": "🏛",
+      "price_adult": 4,
+      "price_child": 4,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 48,
+    "fields": {
+      "code": "paid:al:pinasse",
+      "region": "Aquitaine / Landes",
+      "kind": "paid",
+      "nom": "Bassin d'Arcachon — pinasse",
+      "type": "⛵",
+      "price_adult": 22,
+      "price_child": 12,
+      "saisons": [
+        "ete",
+        "vs",
+        "hs"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 49,
+    "fields": {
+      "code": "paid:al:oyster-city",
+      "region": "Aquitaine / Landes",
+      "kind": "paid",
+      "nom": "Cité de l'Huître (Gujan-Mestras)",
+      "type": "🦪",
+      "price_adult": 12,
+      "price_child": 8,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 50,
+    "fields": {
+      "code": "paid:al:hydravion",
+      "region": "Aquitaine / Landes",
+      "kind": "paid",
+      "nom": "Musée de l'Hydraviation (Biscarrosse)",
+      "type": "✈️",
+      "price_adult": 9,
+      "price_child": 5,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 51,
+    "fields": {
+      "code": "paid:al:surf",
+      "region": "Aquitaine / Landes",
+      "kind": "paid",
+      "nom": "Cours de surf (2h)",
+      "type": "🏄",
+      "price_adult": 40,
+      "price_child": 35,
+      "saisons": [
+        "ete",
+        "vs"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 52,
+    "fields": {
+      "code": "paid:al:biscaventure",
+      "region": "Aquitaine / Landes",
+      "kind": "paid",
+      "nom": "Bisc'Aventure — accrobranche",
+      "type": "🏄",
+      "price_adult": 28,
+      "price_child": 20,
+      "saisons": [
+        "ete",
+        "vs",
+        "hs"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 53,
+    "fields": {
+      "code": "paid:al:aquapark",
+      "region": "Aquitaine / Landes",
+      "kind": "paid",
+      "nom": "AquaPark lac de Biscarrosse",
+      "type": "💦",
+      "price_adult": 22,
+      "price_child": 18,
+      "saisons": [
+        "ete"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 54,
+    "fields": {
+      "code": "paid:al:paddle",
+      "region": "Aquitaine / Landes",
+      "kind": "paid",
+      "nom": "Paddle / Stand-up sur lac",
+      "type": "🏄",
+      "price_adult": 18,
+      "price_child": 14,
+      "saisons": [
+        "ete",
+        "vs"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 55,
+    "fields": {
+      "code": "paid:al:vtt",
+      "region": "Aquitaine / Landes",
+      "kind": "paid",
+      "nom": "Location VTT forêt landaise",
+      "type": "🚲",
+      "price_adult": 20,
+      "price_child": 14,
+      "saisons": [
+        "ete",
+        "vs",
+        "hs"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 56,
+    "fields": {
+      "code": "paid:al:landsailing",
+      "region": "Aquitaine / Landes",
+      "kind": "paid",
+      "nom": "Initiation char à voile (2h)",
+      "type": "🌬️",
+      "price_adult": 35,
+      "price_child": 28,
+      "saisons": [
+        "ete",
+        "vs"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 57,
+    "fields": {
+      "code": "paid:al:sare",
+      "region": "Aquitaine / Landes",
+      "kind": "paid",
+      "nom": "Grottes de Sare (Pays basque)",
+      "type": "🏛",
+      "price_adult": 12,
+      "price_child": 8,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 58,
+    "fields": {
+      "code": "paid:al:ocean-space",
+      "region": "Aquitaine / Landes",
+      "kind": "paid",
+      "nom": "Espace de l'Océan (St-Jean-de-Luz)",
+      "type": "🐠",
+      "price_adult": 14,
+      "price_child": 9,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 59,
+    "fields": {
+      "code": "paid:al:zoo",
+      "region": "Aquitaine / Landes",
+      "kind": "paid",
+      "nom": "Zoo de La Teste",
+      "type": "🐘",
+      "price_adult": 19,
+      "price_child": 14,
+      "saisons": [
+        "ete",
+        "vs",
+        "hs"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 60,
+    "fields": {
+      "code": "paid:mp:boat",
+      "region": "Méditerranée / PACA",
+      "kind": "paid",
+      "nom": "Sortie bateau calanques (½ j.)",
+      "type": "⛵",
+      "price_adult": 32,
+      "price_child": 22,
+      "saisons": [
+        "ete",
+        "vs"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 61,
+    "fields": {
+      "code": "paid:mp:paddle",
+      "region": "Méditerranée / PACA",
+      "kind": "paid",
+      "nom": "Paddle & kayak de mer (1h)",
+      "type": "🏄",
+      "price_adult": 16,
+      "price_child": 12,
+      "saisons": [
+        "ete",
+        "vs"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 62,
+    "fields": {
+      "code": "paid:mp:diving",
+      "region": "Méditerranée / PACA",
+      "kind": "paid",
+      "nom": "Plongée découverte (baptême)",
+      "type": "🤿",
+      "price_adult": 55,
+      "price_child": 45,
+      "saisons": [
+        "ete",
+        "vs"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 63,
+    "fields": {
+      "code": "paid:mp:turtles",
+      "region": "Méditerranée / PACA",
+      "kind": "paid",
+      "nom": "Village des Tortues (Carnoules)",
+      "type": "🐢",
+      "price_adult": 14,
+      "price_child": 10,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 64,
+    "fields": {
+      "code": "paid:mp:ebike",
+      "region": "Méditerranée / PACA",
+      "kind": "paid",
+      "nom": "Location vélo électrique (journée)",
+      "type": "🚲",
+      "price_adult": 28,
+      "price_child": 20,
+      "saisons": [
+        "ete",
+        "vs",
+        "hs"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 65,
+    "fields": {
+      "code": "paid:as:skipass",
+      "region": "Alpes / Savoie",
+      "kind": "paid",
+      "nom": "Forfait ski journée adulte",
+      "type": "⛷️",
+      "price_adult": 55,
+      "price_child": 44,
+      "saisons": [
+        "fetes",
+        "vs",
+        "hs"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 66,
+    "fields": {
+      "code": "paid:as:ski-rent",
+      "region": "Alpes / Savoie",
+      "kind": "paid",
+      "nom": "Location matériel ski (semaine)",
+      "type": "⛷️",
+      "price_adult": 22,
+      "price_child": 15,
+      "saisons": [
+        "fetes",
+        "vs",
+        "hs"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 67,
+    "fields": {
+      "code": "paid:as:snowshoe",
+      "region": "Alpes / Savoie",
+      "kind": "paid",
+      "nom": "Raquettes — sortie guidée (3h)",
+      "type": "🥾",
+      "price_adult": 28,
+      "price_child": 20,
+      "saisons": [
+        "fetes",
+        "vs",
+        "hs"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 68,
+    "fields": {
+      "code": "paid:as:parapente",
+      "region": "Alpes / Savoie",
+      "kind": "paid",
+      "nom": "Parapente — vol biplace",
+      "type": "🪂",
+      "price_adult": 90,
+      "price_child": 70,
+      "saisons": [
+        "ete",
+        "vs"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 69,
+    "fields": {
+      "code": "paid:as:beaufort",
+      "region": "Alpes / Savoie",
+      "kind": "paid",
+      "nom": "Visite fromagerie Beaufort",
+      "type": "🧀",
+      "price_adult": 5,
+      "price_child": 3,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 70,
+    "fields": {
+      "code": "paid:ads:skipass",
+      "region": "Alpes du Sud",
+      "kind": "paid",
+      "nom": "Forfait ski journée adulte",
+      "type": "⛷️",
+      "price_adult": 44,
+      "price_child": 35,
+      "saisons": [
+        "fetes",
+        "vs",
+        "hs"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 71,
+    "fields": {
+      "code": "paid:ads:dogsled",
+      "region": "Alpes du Sud",
+      "kind": "paid",
+      "nom": "Chiens de traîneau (1h)",
+      "type": "🛷",
+      "price_adult": 55,
+      "price_child": 45,
+      "saisons": [
+        "fetes",
+        "hs"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 72,
+    "fields": {
+      "code": "paid:ads:raft",
+      "region": "Alpes du Sud",
+      "kind": "paid",
+      "nom": "Rafting Durance (2h)",
+      "type": "🚣",
+      "price_adult": 45,
+      "price_child": 35,
+      "saisons": [
+        "ete",
+        "vs"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 73,
+    "fields": {
+      "code": "paid:ads:canyon",
+      "region": "Alpes du Sud",
+      "kind": "paid",
+      "nom": "Canyoning Ubaye (½ journée)",
+      "type": "🚣",
+      "price_adult": 55,
+      "price_child": 40,
+      "saisons": [
+        "ete",
+        "vs"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 74,
+    "fields": {
+      "code": "paid:ads:parapente",
+      "region": "Alpes du Sud",
+      "kind": "paid",
+      "nom": "Parapente — vol biplace",
+      "type": "🪂",
+      "price_adult": 85,
+      "price_child": 70,
+      "saisons": [
+        "ete",
+        "vs"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 75,
+    "fields": {
+      "code": "paid:mcj:vulcania",
+      "region": "Massif Central / Jura",
+      "kind": "paid",
+      "nom": "Vulcania (Auvergne)",
+      "type": "🌋",
+      "price_adult": 32,
+      "price_child": 24,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 76,
+    "fields": {
+      "code": "paid:mcj:skipass",
+      "region": "Massif Central / Jura",
+      "kind": "paid",
+      "nom": "Forfait ski journée",
+      "type": "⛷️",
+      "price_adult": 36,
+      "price_child": 27,
+      "saisons": [
+        "fetes",
+        "vs",
+        "hs"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 77,
+    "fields": {
+      "code": "paid:mcj:snowshoe",
+      "region": "Massif Central / Jura",
+      "kind": "paid",
+      "nom": "Raquettes (sortie guidée)",
+      "type": "🥾",
+      "price_adult": 22,
+      "price_child": 15,
+      "saisons": [
+        "fetes",
+        "vs",
+        "hs"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 78,
+    "fields": {
+      "code": "paid:mcj:canoe",
+      "region": "Massif Central / Jura",
+      "kind": "paid",
+      "nom": "Canoë-kayak rivière Doubs",
+      "type": "🚣",
+      "price_adult": 22,
+      "price_child": 16,
+      "saisons": [
+        "ete",
+        "vs"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 79,
+    "fields": {
+      "code": "paid:mcj:thermes",
+      "region": "Massif Central / Jura",
+      "kind": "paid",
+      "nom": "Thermes de Chaudes-Aigues",
+      "type": "💆",
+      "price_adult": 25,
+      "price_child": 0,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 80,
+    "fields": {
+      "code": "paid:cp:canoe-ardeche",
+      "region": "Campagne / Provence",
+      "kind": "paid",
+      "nom": "Canoë Gorges de l'Ardèche (1 j.)",
+      "type": "🚣",
+      "price_adult": 28,
+      "price_child": 20,
+      "saisons": [
+        "ete",
+        "vs"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 81,
+    "fields": {
+      "code": "paid:cp:chauvet",
+      "region": "Campagne / Provence",
+      "kind": "paid",
+      "nom": "Grotte Chauvet 2 — Caverne Pont d'Arc",
+      "type": "🏛",
+      "price_adult": 19,
+      "price_child": 10,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 82,
+    "fields": {
+      "code": "paid:cp:ventoux",
+      "region": "Campagne / Provence",
+      "kind": "paid",
+      "nom": "Mont Ventoux — ascension vélo guidée",
+      "type": "🚲",
+      "price_adult": 45,
+      "price_child": 0,
+      "saisons": [
+        "ete",
+        "vs"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 83,
+    "fields": {
+      "code": "paid:cp:lascaux",
+      "region": "Campagne / Provence",
+      "kind": "paid",
+      "nom": "Lascaux 4 (Grotte préhistorique)",
+      "type": "🏛",
+      "price_adult": 20,
+      "price_child": 13,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 84,
+    "fields": {
+      "code": "paid:cp:horse",
+      "region": "Campagne / Provence",
+      "kind": "paid",
+      "nom": "Équitation Camargue (1h30)",
+      "type": "🐴",
+      "price_adult": 35,
+      "price_child": 28,
+      "saisons": [
+        "ete",
+        "vs",
+        "hs"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 85,
+    "fields": {
+      "code": "paid:op:train",
+      "region": "Occitanie / Pyrénées",
+      "kind": "paid",
+      "nom": "Train Jaune de Cerdagne",
+      "type": "🚂",
+      "price_adult": 22,
+      "price_child": 14,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 86,
+    "fields": {
+      "code": "paid:op:thermes",
+      "region": "Occitanie / Pyrénées",
+      "kind": "paid",
+      "nom": "Thermes de Vernet-les-Bains",
+      "type": "💆",
+      "price_adult": 28,
+      "price_child": 0,
+      "saisons": [
+        "hs",
+        "vs",
+        "ete",
+        "fetes"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 87,
+    "fields": {
+      "code": "paid:op:randocanigou",
+      "region": "Occitanie / Pyrénées",
+      "kind": "paid",
+      "nom": "Randonnée Canigou (guidée)",
+      "type": "🥾",
+      "price_adult": 15,
+      "price_child": 10,
+      "saisons": [
+        "ete",
+        "vs",
+        "hs"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 88,
+    "fields": {
+      "code": "paid:op:ski",
+      "region": "Occitanie / Pyrénées",
+      "kind": "paid",
+      "nom": "Ski de fond Font Romeu",
+      "type": "⛷️",
+      "price_adult": 18,
+      "price_child": 12,
+      "saisons": [
+        "fetes",
+        "vs",
+        "hs"
+      ]
+    }
+  },
+  {
+    "model": "catalog.activity",
+    "pk": 89,
+    "fields": {
+      "code": "paid:op:kayak",
+      "region": "Occitanie / Pyrénées",
+      "kind": "paid",
+      "nom": "Kayak Têt / Aude (2h)",
+      "type": "🚣",
+      "price_adult": 30,
+      "price_child": 22,
+      "saisons": [
+        "ete",
+        "vs"
+      ]
+    }
+  },
+  {
+    "model": "catalog.animation",
+    "pk": 1,
+    "fields": {
+      "nom": "Clubs enfants & ados",
+      "note": "Encadrés par animateurs diplômés · sans supplément",
+      "order": 0
+    }
+  },
+  {
+    "model": "catalog.animation",
+    "pk": 2,
+    "fields": {
+      "nom": "Animations de journée",
+      "note": "4 rendez-vous/semaine : balade, activité sportive, ludique ou terroir",
+      "order": 1
+    }
+  },
+  {
+    "model": "catalog.animation",
+    "pk": 3,
+    "fields": {
+      "nom": "Animations de soirée",
+      "note": "Spectacles, concerts, quiz, soirées à thème · Programme variable",
+      "order": 2
+    }
+  },
+  {
+    "model": "catalog.animation",
+    "pk": 4,
+    "fields": {
+      "nom": "Randonnées accompagnées",
+      "note": "Sorties nature encadrées gratuites · niveaux adaptés",
+      "order": 3
+    }
+  },
+  {
+    "model": "catalog.villageinfra",
+    "pk": 1,
+    "fields": {
+      "village": "lacanau",
+      "infra": [
+        "🏊 Outdoor swimming pool",
+        "🚲 Local bike rental"
+      ],
+      "anim_ete": [
+        "Family Day",
+        "Adult entertainment",
+        "Lively evenings",
+        "Crossroads of the regions"
+      ],
+      "anim_hiver": [],
+      "anim_hs": [
+        "Adult entertainment",
+        "Lively evenings"
+      ],
+      "extras_ete": "Canoe trip on the lake (with our service provider)\nSurf lessons and courses at preferential rates (with the Kalani school)",
+      "extras_hiver": ""
+    }
+  },
+  {
+    "model": "catalog.villageclubsete",
+    "pk": 1,
+    "fields": {
+      "village": "lacanau",
+      "paques": {
+        "bb": false,
+        "mini": true,
+        "maxi": true,
+        "ado": false
+      },
+      "ete": {
+        "bb": false,
+        "mini": true,
+        "maxi": true,
+        "ado": true
+      },
+      "toussaint": {
+        "bb": false,
+        "mini": true,
+        "maxi": true,
+        "ado": false
+      }
+    }
+  }
+]

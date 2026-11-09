@@ -1,0 +1,124 @@
+{% extends "admin/base_site.html" %}
+{% load static %}
+
+{% block extrastyle %}
+{{ block.super }}
+<link rel="stylesheet" href="{% static 'tariff_scraper/css/price_health_dashboard.css' %}">
+{% endblock %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+  <a href="{% url 'admin:index' %}">Accueil</a>
+  &rsaquo; <a href="{% url 'admin:app_list' app_label='tariff_scraper' %}">Tariff scraper</a>
+  &rsaquo; <a href="{% url 'admin:tariff_scraper_price_health_dashboard' %}">Tableau de bord</a>
+  &rsaquo; Erreurs &mdash; {{ village.nom }}
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="health-dashboard error-detail-page">
+  <h1>Détail des erreurs &mdash; {{ village.nom }}</h1>
+  <p class="health-intro">
+    Région : {{ village.region }} &middot;
+    <a href="{% url 'admin:tariff_scraper_price_health_dashboard' %}">Retour au tableau de bord</a>
+  </p>
+
+  {% if latest_log %}
+  <div class="error-detail-meta">
+    <strong>Type d'erreur :</strong> {{ latest_log.get_change_type_display }} &middot;
+    <strong>Détecté le :</strong> {{ latest_log.detected_at|date:"d/m/Y H:i" }}
+    {% if latest_log.source_url %} &middot;
+      <strong>URL :</strong> <a href="{{ latest_log.source_url }}" target="_blank">{{ latest_log.source_url }}</a>
+    {% endif %}
+  </div>
+
+  {% if alert_reports %}
+  <div class="error-detail-section">
+    <h3>Messages d'alerte envoyés</h3>
+    <div class="error-alert-reports">
+      {% for report in alert_reports %}
+      <div class="error-alert-report">
+        <div class="error-alert-heading">{{ report.heading }}</div>
+        <div class="error-alert-title">{{ report.title }}</div>
+        <pre class="error-alert-details">{{ report.details }}</pre>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+  {% if latest_log.missing_markers %}
+  <div class="error-detail-section">
+    <h3>Marqueurs manquants</h3>
+    <ul class="error-marker-list">
+      {% for marker in latest_log.missing_markers %}
+      <li class="error-marker-missing">{{ marker }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+  {% if latest_log.found_markers %}
+  <div class="error-detail-section">
+    <h3>Marqueurs trouvés</h3>
+    <ul class="error-marker-list">
+      {% for marker in latest_log.found_markers %}
+      <li class="error-marker-found">{{ marker }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+  <div class="error-detail-section">
+    <h3>Statistiques</h3>
+    <table class="error-detail-stats">
+      <tr><td>Longueur HTML</td><td>{{ latest_log.html_length|default:"0" }} caractères</td></tr>
+      <tr><td>Tables trouvées</td><td>{{ latest_log.table_count|default:"0" }}</td></tr>
+      <tr><td>Bands scrapés</td><td>{{ latest_log.bands_scraped|default:"0" }}</td></tr>
+      <tr><td>Bands avec prix</td><td>{{ latest_log.priced_bands|default:"0" }}</td></tr>
+    </table>
+  </div>
+  {% endif %}
+
+  {% if error_details %}
+  <div class="error-detail-section">
+    <h3>Erreurs par étape</h3>
+    <p class="error-detail-help">
+      Liste complète des erreurs enregistrées pendant le scrape, dans le même
+      format que les alertes : étape, fichier/fonction, puis raison précise.
+    </p>
+    <div class="error-steps">
+      {% for err in error_details %}
+      <div class="error-step">
+        <div class="error-step-header">
+          <span class="error-step-badge">Étape</span>
+          <span class="error-step-name">{{ err.step }}</span>
+        </div>
+        <div class="error-step-source">
+          <span class="error-step-label">Code :</span>
+          <code>{{ err.source }}</code>
+        </div>
+        <div class="error-step-reason">
+          <span class="error-step-label">Erreur :</span>
+          {{ err.reason }}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% elif not latest_log %}
+  <div class="error-detail-section">
+    <p class="health-empty">Aucun log d'erreur format disponible pour ce village.</p>
+  </div>
+  {% else %}
+  <div class="error-detail-section">
+    <p class="health-empty">Aucune erreur détaillée enregistrée pour cet incident.</p>
+  </div>
+  {% endif %}
+
+  <div class="error-detail-actions">
+    <a class="error-detail-back" href="{% url 'admin:tariff_scraper_price_health_dashboard' %}">&larr; Retour au tableau de bord</a>
+    <a class="error-detail-link" href="{% url 'admin:tariff_scraper_formatchangelog_changelist' %}?village_id__exact={{ village.pk }}">Voir tous les logs de changement</a>
+  </div>
+</div>
+{% endblock %}

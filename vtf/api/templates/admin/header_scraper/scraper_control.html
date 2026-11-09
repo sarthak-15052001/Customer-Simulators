@@ -1,0 +1,147 @@
+{% extends "admin/base_site.html" %}
+{% load static %}
+
+{% block extrastyle %}
+{{ block.super }}
+<link rel="stylesheet" href="{% static 'header_scraper/css/scraper_control.css' %}">
+{% endblock %}
+
+{% block extrahead %}
+{{ block.super }}
+<script>
+  window.HEADER_SCRAPER_CONFIG = {
+    statusUrlTemplate: "{{ status_url_template|escapejs }}",
+    activeTaskId: "{{ active_job.task_id|default:''|escapejs }}",
+    queryTaskId: "{{ request.GET.task|default:''|escapejs }}",
+  };
+</script>
+<script src="{% static 'header_scraper/js/scraper_control.js' %}" defer></script>
+{% endblock %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+  <a href="{% url 'admin:index' %}">Accueil</a>
+  &rsaquo; <a href="{% url 'admin:app_list' app_label='header_scraper' %}">Header scraper</a>
+  &rsaquo; <a href="{% url 'admin:header_scraper_headerbannersnapshot_changelist' %}">Header banner snapshots</a>
+  &rsaquo; Contrôle du scraping
+</div>
+{% endblock %}
+
+{% block content %}
+<div id="scraper-control" class="scraper-control">
+  <h1>Scraper de bandeau</h1>
+  <p class="scraper-intro">
+    Lancez un scraping de bandeau depuis l'admin (même logique que
+    <code>task_scrape_header_banner_language</code> / <code>task_scrape_header_banner</code>).
+    Choisissez une langue précise ou lancez le scraping sur toutes les langues.
+  </p>
+
+  {% if messages %}
+  <ul class="messagelist">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  <div class="scraper-grid">
+    <section class="scraper-card scraper-card-form">
+      <h2>Nouveau scraping</h2>
+      <form method="post" action="{{ start_url }}" id="scraper-start-form">
+        {% csrf_token %}
+
+        <fieldset class="scraper-fieldset">
+          <legend>Cible</legend>
+          <label class="scraper-radio">
+            <input type="radio" name="target" value="language" checked data-target-toggle="language">
+            Langue
+          </label>
+          <label class="scraper-radio">
+            <input type="radio" name="target" value="all" data-target-toggle="all">
+            Toutes les langues
+          </label>
+        </fieldset>
+
+        <div class="scraper-field" id="field-language">
+          <label for="language">Langue</label>
+          <select name="language" id="language">
+            <option value="">— Choisir une langue —</option>
+            {% for language in languages %}
+            <option value="{{ language.id }}">{{ language.label }}</option>
+            {% endfor %}
+          </select>
+        </div>
+
+        <div class="scraper-actions">
+          <button type="submit" class="button scraper-btn-start" id="btn-start"{% if active_job %} disabled{% endif %}>
+            Démarrer le scraping
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <section class="scraper-card scraper-card-status">
+      <h2>Statut en cours</h2>
+      <div id="job-status-panel" class="job-status-panel{% if not active_job %} job-status-idle{% endif %}">
+        <p class="job-status-label" id="job-status-label">
+          {% if active_job %}
+          Tâche active : <strong id="job-id-display">{{ active_job.task_id }}</strong>
+          {% else %}
+          Aucun scraping en cours.
+          {% endif %}
+        </p>
+        <div class="job-status-badge" id="job-status-badge" data-status="{{ active_job.status|default:'idle' }}">
+          {{ active_job.status|default:"Inactif" }}
+        </div>
+        <dl class="job-status-details" id="job-status-details">
+          {% if active_job %}
+          <div><dt>Cible</dt><dd>{{ active_job.target_type }} — {{ active_job.target_id }}</dd></div>
+          {% endif %}
+        </dl>
+        <div class="job-summary" id="job-summary"></div>
+      </div>
+
+      <form method="post" action="{{ stop_url }}" id="scraper-stop-form">
+        {% csrf_token %}
+        <input type="hidden" name="task_id" id="stop-job-id" value="{{ active_job.task_id|default:'' }}">
+        <button
+          type="submit"
+          class="button scraper-btn-stop"
+          id="btn-stop"
+          {% if not active_job %}disabled{% endif %}
+        >
+          Arrêter le scraping
+        </button>
+      </form>
+    </section>
+  </div>
+
+  <section class="scraper-card scraper-card-history">
+    <h2>Jobs récents</h2>
+    <table class="scraper-table">
+      <thead>
+        <tr>
+          <th>Task ID</th>
+          <th>Cible</th>
+          <th>Statut</th>
+          <th>Déclenché par</th>
+          <th>Créé le</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for job in recent_jobs %}
+        <tr data-job-id="{{ job.task_id }}">
+          <td>{{ job.task_id }}</td>
+          <td>{{ job.target_type }} / {{ job.target_id }}</td>
+          <td><span class="status-pill status-{{ job.status }}">{{ job.status }}</span></td>
+          <td>{{ job.triggered_by }}</td>
+          <td>{{ job.created_at }}</td>
+        </tr>
+        {% empty %}
+        <tr><td colspan="5">Aucun job pour le moment.</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </section>
+</div>
+{% endblock %}

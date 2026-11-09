@@ -1,0 +1,65 @@
+{% extends "admin/base_site.html" %}
+
+{# Approve / reject confirmation for a pending tariff proposal.             #}
+{# Shown on GET; the decision only fires on POST from this form.            #}
+
+{% block content %}
+<div id="content-main">
+
+  <p style="margin:0 0 18px 0;">
+    Village <strong>{{ approval.village_id }}</strong> &middot;
+    proposition creee le {{ approval.created_at|date:"d/m/Y H:i" }} &middot;
+    {{ approval.bands_count }} bande(s) datee(s).
+    {% if approval.source_url %}
+      <br><a href="{{ approval.source_url }}" target="_blank" rel="noopener">Page VTF source</a>
+    {% endif %}
+  </p>
+
+  {% if action == "approve" %}
+    <div style="border-left:4px solid #1a7f37;background:#e9f7ee;padding:12px 16px;margin-bottom:22px;">
+      <p style="margin:0 0 8px 0;"><strong>Cette action va :</strong></p>
+      <ul style="margin:0;padding-left:20px;">
+        <li>desactiver les bandes actuellement actives pour les formules concernees ;</li>
+        <li>activer les {{ approval.bands_count }} bandes datees ci-dessous — c'est
+            <em>elles</em> que le moteur de prix lit en priorite ;</li>
+        <li>reecrire les tarifs saison de <code>Village.tarifs</code> (repli) ;</li>
+        <li>resynchroniser <code>villages.json</code>.</li>
+      </ul>
+      <p style="margin:8px 0 0 0;">Reversible ensuite via &laquo;&nbsp;Annuler l'approbation&nbsp;&raquo;.</p>
+    </div>
+  {% else %}
+    <div style="border-left:4px solid #6b7280;background:#f3f4f6;padding:12px 16px;margin-bottom:22px;">
+      <p style="margin:0;">
+        Rejeter ne touche <strong>aucun prix</strong> : ni les bandes datees, ni
+        <code>Village.tarifs</code>. La proposition est simplement classee.
+      </p>
+    </div>
+  {% endif %}
+
+  <h2 style="font-size:15px;margin:0 0 8px 0;">Bandes datees proposees</h2>
+  {{ bands_grid }}
+
+  <h2 style="font-size:15px;margin:24px 0 8px 0;">Tarifs saison proposes (repli)</h2>
+  {{ season_grid }}
+
+  <h2 style="font-size:15px;margin:24px 0 8px 0;">Fiabilite des saisons proposees</h2>
+  {{ notes_grid }}
+
+  <form method="post" style="margin-top:26px;">
+    {% csrf_token %}
+    {% if action == "reject" %}
+      <p style="margin:0 0 10px 0;">
+        <label for="reject_reason">Motif du rejet (facultatif) :</label><br>
+        <textarea id="reject_reason" name="reject_reason" rows="3" cols="70"></textarea>
+      </p>
+    {% endif %}
+    <input type="submit"
+           value="{% if action == 'approve' %}Oui, approuver et appliquer{% else %}Oui, rejeter{% endif %}"
+           style="background:{% if action == 'approve' %}#1a7f37{% else %}#6b7280{% endif %};
+                  color:#fff;padding:10px 16px;border:0;border-radius:4px;
+                  cursor:pointer;font-weight:600;">
+    <a href="{{ change_url }}" class="button cancel-link" style="margin-left:10px;">Annuler</a>
+  </form>
+
+</div>
+{% endblock %}

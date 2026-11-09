@@ -1,0 +1,12 @@
+# vtf/api — see also the root .gitignore for shared rules (.venv/, __pycache__, etc.)
+
+# SQLite + collected static + any other runtime data the dev/prod containers write.
+.data/
+
+# OpenAPI schema produced by `python manage.py spectacular`.
+schema.yml
+
+# Local override for settings (secrets, etc.).
+config/settings/local.py
+
+.env

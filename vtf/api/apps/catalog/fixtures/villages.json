@@ -1,0 +1,1531 @@
+[
+  {
+    "model": "catalog.village",
+    "pk": "saint-cast",
+    "fields": {
+      "nom": "Saint-Cast",
+      "nom2": "L'Hôtel des Bains",
+      "region": "Bretagne / Normandie",
+      "env_emoji": "🌊",
+      "env_code": "sea",
+      "has_loc": false,
+      "ski": false,
+      "ouverture": "20/12–3/01, 21/02–1/11 (sf 4/07–15/08)",
+      "tarifs": {
+        "PC": {
+          "hs": 644,
+          "vs": 644,
+          "ete": 882,
+          "fetes": 700
+        },
+        "LOC": {
+          "hs": 510,
+          "vs": 570,
+          "ete": 560,
+          "fetes": 570
+        },
+        "DP": {
+          "vs": 546,
+          "ete": 749,
+          "hs": 546,
+          "fetes": 595
+        }
+      },
+      "bebe_club": false,
+      "forfait_rm": false,
+      "qf_exc": false,
+      "enf_solo_half": false,
+      "vtf_department": "cotes-d-armor",
+      "vtf_city": "saint-cast-le-guildo",
+      "vtf_slug": "l-hotel-des-bains",
+      "vtf_url_verified_at": "2026-05-25T08:55:26.732087+00:00"
+    }
+  },
+  {
+    "model": "catalog.village",
+    "pk": "blainville",
+    "fields": {
+      "nom": "Blainville",
+      "nom2": "Le Sénéquet",
+      "region": "Bretagne / Normandie",
+      "env_emoji": "🌊",
+      "env_code": "sea",
+      "has_loc": true,
+      "ski": false,
+      "ouverture": "4/04–3/10/26",
+      "tarifs": {
+        "PC": {
+          "hs": 469,
+          "vs": 574,
+          "ete": 679
+        },
+        "LOC": {
+          "hs": 532,
+          "vs": 532,
+          "ete": 532
+        },
+        "DP": {
+          "hs": 399,
+          "vs": 490,
+          "ete": 574
+        }
+      },
+      "bebe_club": true,
+      "forfait_rm": false,
+      "qf_exc": false,
+      "enf_solo_half": true,
+      "vtf_department": "manche",
+      "vtf_city": "blainville-sur-mer",
+      "vtf_slug": "le-senequet",
+      "vtf_url_verified_at": "2026-05-25T08:55:12.545492+00:00"
+    }
+  },
+  {
+    "model": "catalog.village",
+    "pk": "riec",
+    "fields": {
+      "nom": "Riec-sur-Bélon",
+      "nom2": "Ker Belen",
+      "region": "Bretagne / Normandie",
+      "env_emoji": "🌊",
+      "env_code": "sea",
+      "has_loc": true,
+      "ski": false,
+      "ouverture": "4/04–25/10/26",
+      "tarifs": {
+        "PC": {
+          "hs": 574,
+          "vs": 588,
+          "ete": 791
+        },
+        "LOC": {
+          "hs": 511,
+          "vs": 469,
+          "ete": 469
+        },
+        "DP": {
+          "hs": 490,
+          "vs": 497,
+          "ete": 672
+        }
+      },
+      "bebe_club": true,
+      "forfait_rm": false,
+      "qf_exc": false,
+      "enf_solo_half": true,
+      "vtf_department": "finistere",
+      "vtf_city": "riec-sur-belon",
+      "vtf_slug": "ker-belen",
+      "vtf_url_verified_at": "2026-05-25T08:55:15.247367+00:00"
+    }
+  },
+  {
+    "model": "catalog.village",
+    "pk": "biarritz",
+    "fields": {
+      "nom": "Biarritz",
+      "nom2": "Le Domaine de Françon",
+      "region": "Aquitaine / Landes",
+      "env_emoji": "🌊",
+      "env_code": "sea",
+      "has_loc": true,
+      "ski": false,
+      "ouverture": "20/12–3/01 et 14/02–1/11/26",
+      "tarifs": {
+        "PC": {
+          "hs": 644,
+          "vs": 637,
+          "ete": 1057,
+          "fetes": 693
+        },
+        "LOC": {
+          "hs": 581,
+          "vs": 644,
+          "ete": 644,
+          "fetes": 756
+        },
+        "DP": {
+          "vs": 539,
+          "ete": 896,
+          "hs": 546,
+          "fetes": 588
+        }
+      },
+      "bebe_club": true,
+      "forfait_rm": false,
+      "qf_exc": false,
+      "enf_solo_half": true,
+      "vtf_department": "pyrenees-atlantiques",
+      "vtf_city": "biarritz",
+      "vtf_slug": "le-domaine-de-francon",
+      "vtf_url_verified_at": "2026-05-25T08:54:56.487929+00:00"
+    }
+  },
+  {
+    "model": "catalog.village",
+    "pk": "lacanau",
+    "fields": {
+      "nom": "Lacanau",
+      "nom2": "La Forestière",
+      "region": "Aquitaine / Landes",
+      "env_emoji": "🌊",
+      "env_code": "sea",
+      "has_loc": false,
+      "ski": false,
+      "ouverture": "11/04–1/11/26",
+      "tarifs": {
+        "PC": {
+          "hs": 469,
+          "vs": 581,
+          "ete": 945
+        },
+        "LOC": {
+          "hs": 430,
+          "vs": 500,
+          "ete": 530
+        },
+        "DP": {
+          "hs": 399,
+          "vs": 497,
+          "ete": 805
+        }
+      },
+      "bebe_club": false,
+      "forfait_rm": false,
+      "qf_exc": false,
+      "enf_solo_half": true,
+      "vtf_department": "gironde",
+      "vtf_city": "lacanau",
+      "vtf_slug": "la-forestiere",
+      "vtf_url_verified_at": "2026-05-25T08:55:09.962378+00:00"
+    }
+  },
+  {
+    "model": "catalog.village",
+    "pk": "carcans-les-oyats",
+    "fields": {
+      "nom": "Carcans",
+      "nom2": "Les Oyats",
+      "region": "Aquitaine / Landes",
+      "env_emoji": "🌊",
+      "env_code": "sea",
+      "has_loc": true,
+      "ski": false,
+      "ouverture": "Oyats LOC 7/05–20/09",
+      "tarifs": {
+        "LOC": {
+          "hs": 439,
+          "ete": 670
+        }
+      },
+      "bebe_club": false,
+      "forfait_rm": false,
+      "qf_exc": false,
+      "enf_solo_half": true,
+      "vtf_department": "gironde",
+      "vtf_city": "carcans",
+      "vtf_slug": "les-oyats",
+      "vtf_url_verified_at": "2026-05-25T08:55:06.883558+00:00"
+    }
+  },
+  {
+    "model": "catalog.village",
+    "pk": "carcans-les-bruyeres",
+    "fields": {
+      "nom": "Carcans",
+      "nom2": "Les Bruyères",
+      "region": "Aquitaine / Landes",
+      "env_emoji": "🌊",
+      "env_code": "sea",
+      "has_loc": true,
+      "ski": false,
+      "ouverture": "Bruyères PC+DP+LOC 27/06–29/08",
+      "tarifs": {
+        "PC": {
+          "ete": 749
+        },
+        "LOC": {
+          "ete": 469
+        },
+        "DP": {
+          "ete": 637
+        }
+      },
+      "bebe_club": false,
+      "forfait_rm": false,
+      "qf_exc": false,
+      "enf_solo_half": true,
+      "vtf_department": "gironde",
+      "vtf_city": "carcans",
+      "vtf_slug": "les-bruyeres",
+      "vtf_url_verified_at": "2026-05-25T08:55:06.883558+00:00"
+    }
+  },
+  {
+    "model": "catalog.village",
+    "pk": "biscarrosse",
+    "fields": {
+      "nom": "Biscarrosse",
+      "nom2": "La Jaougue Soule",
+      "region": "Aquitaine / Landes",
+      "env_emoji": "🌊",
+      "env_code": "sea",
+      "has_loc": true,
+      "ski": false,
+      "ouverture": "7/05–25/10/26",
+      "tarifs": {
+        "PC": {
+          "hs": 469,
+          "vs": 555,
+          "ete": 580
+        },
+        "LOC": {
+          "hs": 445,
+          "vs": 515,
+          "ete": 545
+        }
+      },
+      "bebe_club": false,
+      "forfait_rm": false,
+      "qf_exc": false,
+      "enf_solo_half": false,
+      "vtf_department": "landes",
+      "vtf_city": "biscarrosse",
+      "vtf_slug": "la-jaougue-soule",
+      "vtf_url_verified_at": "2026-05-25T08:55:03.599443+00:00"
+    }
+  },
+  {
+    "model": "catalog.village",
+    "pk": "bandol",
+    "fields": {
+      "nom": "Bandol",
+      "nom2": "Clairefont",
+      "region": "Méditerranée / PACA",
+      "env_emoji": "☀️",
+      "env_code": "sea",
+      "has_loc": false,
+      "ski": false,
+      "ouverture": "28/02–1/11/26",
+      "tarifs": {
+        "PC": {
+          "hs": 644,
+          "vs": 637,
+          "ete": 917
+        },
+        "LOC": {
+          "hs": 490,
+          "vs": 555,
+          "ete": 600
+        },
+        "DP": {
+          "vs": 539,
+          "ete": 777,
+          "hs": 546
+        }
+      },
+      "bebe_club": false,
+      "forfait_rm": false,
+      "qf_exc": true,
+      "enf_solo_half": false,
+      "vtf_department": "var",
+      "vtf_city": "bandol",
+      "vtf_slug": "clairefont",
+      "vtf_url_verified_at": "2026-05-25T08:56:10.434711+00:00"
+    }
+  },
+  {
+    "model": "catalog.village",
+    "pk": "sainte-maxime",
+    "fields": {
+      "nom": "Sainte-Maxime",
+      "nom2": "Golfe de Saint Tropez",
+      "region": "Méditerranée / PACA",
+      "env_emoji": "☀️",
+      "env_code": "sea",
+      "has_loc": false,
+      "ski": false,
+      "ouverture": "20/12–3/01 et 7/03–31/10/26",
+      "tarifs": {
+        "PC": {
+          "hs": 791,
+          "vs": 623,
+          "ete": 1099,
+          "fetes": 637
+        },
+        "LOC": {
+          "hs": 480,
+          "vs": 540,
+          "ete": 600,
+          "fetes": 585
+        },
+        "DP": {
+          "vs": 532,
+          "hs": 672,
+          "ete": 931,
+          "fetes": 539
+        }
+      },
+      "bebe_club": false,
+      "forfait_rm": false,
+      "qf_exc": true,
+      "enf_solo_half": false,
+      "vtf_department": "var",
+      "vtf_city": "sainte-maxime",
+      "vtf_slug": "golfe-de-saint-tropez",
+      "vtf_url_verified_at": "2026-05-25T08:56:18.611368+00:00"
+    }
+  },
+  {
+    "model": "catalog.village",
+    "pk": "agde",
+    "fields": {
+      "nom": "Agde",
+      "nom2": "Le Domaine d'Agde",
+      "region": "Méditerranée / PACA",
+      "env_emoji": "☀️",
+      "env_code": "sea",
+      "has_loc": false,
+      "ski": false,
+      "ouverture": "11/04–1/11/26",
+      "tarifs": {
+        "PC": {
+          "hs": 581,
+          "vs": 553,
+          "ete": 875
+        },
+        "LOC": {
+          "hs": 450,
+          "vs": 510,
+          "ete": 560
+        },
+        "DP": {
+          "hs": 497,
+          "vs": 469,
+          "ete": 742
+        }
+      },
+      "bebe_club": true,
+      "forfait_rm": false,
+      "qf_exc": false,
+      "enf_solo_half": true,
+      "vtf_department": "herault",
+      "vtf_city": "agde",
+      "vtf_slug": "le-domaine-d-agde",
+      "vtf_url_verified_at": "2026-05-25T08:56:04.642599+00:00"
+    }
+  },
+  {
+    "model": "catalog.village",
+    "pk": "chamonix",
+    "fields": {
+      "nom": "Chamonix",
+      "nom2": "Les Econtres",
+      "region": "Alpes / Savoie",
+      "env_emoji": "⛰️",
+      "env_code": "mountain",
+      "has_loc": false,
+      "ski": true,
+      "ouverture": "20/12/25–27/09/26",
+      "tarifs": {
+        "PC": {
+          "hs": 952,
+          "vs": 819,
+          "ete": 875,
+          "fetes": 868
+        },
+        "LOC": {
+          "hs": 490,
+          "vs": 540,
+          "ete": 520,
+          "fetes": 560
+        },
+        "DP": {
+          "hs": 812,
+          "vs": 693,
+          "ete": 742,
+          "fetes": 735
+        }
+      },
+      "bebe_club": false,
+      "forfait_rm": false,
+      "qf_exc": false,
+      "enf_solo_half": false,
+      "vtf_department": "haute-savoie",
+      "vtf_city": "chamonix",
+      "vtf_slug": "les-econtres",
+      "vtf_url_verified_at": "2026-05-25T08:53:54.162183+00:00"
+    }
+  },
+  {
+    "model": "catalog.village",
+    "pk": "alpe-dhuez",
+    "fields": {
+      "nom": "Alpe d'Huez",
+      "nom2": "Le Balcon de l'Alpe",
+      "region": "Alpes / Savoie",
+      "env_emoji": "⛰️",
+      "env_code": "mountain",
+      "has_loc": false,
+      "ski": true,
+      "ouverture": "Hiver uniquement (20/12–18/04/26)",
+      "tarifs": {
+        "PC": {
+          "hs": 1218,
+          "vs": 545,
+          "fetes": 994
+        },
+        "LOC": {
+          "hs": 460,
+          "vs": 510,
+          "fetes": 530
+        }
+      },
+      "bebe_club": false,
+      "forfait_rm": false,
+      "qf_exc": false,
+      "enf_solo_half": false,
+      "vtf_department": "isere",
+      "vtf_city": "alpe-d-huez",
+      "vtf_slug": "le-balcon-de-l-alpe",
+      "vtf_url_verified_at": "2026-05-25T08:53:46.988125+00:00"
+    }
+  },
+  {
+    "model": "catalog.village",
+    "pk": "doucy",
+    "fields": {
+      "nom": "Doucy-Valmorel",
+      "nom2": "Les Carlines",
+      "region": "Alpes / Savoie",
+      "env_emoji": "⛰️",
+      "env_code": "mountain",
+      "has_loc": false,
+      "ski": true,
+      "ouverture": "20/12–4/04 et 4/07–29/08/26",
+      "tarifs": {
+        "PC": {
+          "hs": 475,
+          "vs": 530,
+          "ete": 510,
+          "fetes": 550
+        },
+        "LOC": {
+          "hs": 450,
+          "vs": 500,
+          "ete": 490,
+          "fetes": 520
+        }
+      },
+      "bebe_club": false,
+      "forfait_rm": false,
+      "qf_exc": false,
+      "enf_solo_half": false,
+      "vtf_department": "savoie",
+      "vtf_city": "doucy-combebouviere",
+      "vtf_slug": "les-carlines",
+      "vtf_url_verified_at": "2026-05-25T08:54:07.336495+00:00"
+    }
+  },
+  {
+    "model": "catalog.village",
+    "pk": "karellis",
+    "fields": {
+      "nom": "Les Karellis",
+      "nom2": "Résidence Les Karellis",
+      "region": "Alpes / Savoie",
+      "env_emoji": "⛰️",
+      "env_code": "mountain",
+      "has_loc": false,
+      "ski": true,
+      "ouverture": "20/12/25–11/04 · 4/07–15/08/26",
+      "tarifs": {
+        "PC": {
+          "hs": 1253,
+          "vs": 565,
+          "ete": 581,
+          "fetes": 1078
+        },
+        "LOC": {
+          "hs": 475,
+          "vs": 530,
+          "ete": 515,
+          "fetes": 550
+        }
+      },
+      "bebe_club": false,
+      "forfait_rm": true,
+      "qf_exc": false,
+      "enf_solo_half": false,
+      "vtf_department": "savoie",
+      "vtf_city": "montricher-albanne",
+      "vtf_slug": "les-balcons-de-maurienne",
+      "vtf_url_verified_at": "2026-05-25T08:54:15.900205+00:00"
+    }
+  },
+  {
+    "model": "catalog.village",
+    "pk": "la-plagne",
+    "fields": {
+      "nom": "La Plagne",
+      "nom2": "Le Dou de la Ramaz",
+      "region": "Alpes / Savoie",
+      "env_emoji": "⛰️",
+      "env_code": "mountain",
+      "has_loc": false,
+      "ski": true,
+      "ouverture": "20/12–18/04 et 4/07–22/08/26",
+      "tarifs": {
+        "PC": {
+          "hs": 1183,
+          "vs": 1148,
+          "ete": 700,
+          "fetes": 980
+        },
+        "LOC": {
+          "hs": 470,
+          "vs": 525,
+          "ete": 510,
+          "fetes": 545
+        },
+        "DP": {
+          "hs": 553,
+          "ete": 595
+        }
+      },
+      "bebe_club": false,
+      "forfait_rm": false,
+      "qf_exc": false,
+      "enf_solo_half": true,
+      "vtf_department": "savoie",
+      "vtf_city": "la-plagne-montalbert",
+      "vtf_slug": "le-dou-de-la-ramaz",
+      "vtf_url_verified_at": "2026-05-25T08:54:09.816137+00:00"
+    }
+  },
+  {
+    "model": "catalog.village",
+    "pk": "montgenevre",
+    "fields": {
+      "nom": "Montgenèvre",
+      "nom2": "Le Grand Hôtel",
+      "region": "Alpes / Savoie",
+      "env_emoji": "⛰️",
+      "env_code": "mountain",
+      "has_loc": false,
+      "ski": true,
+      "ouverture": "20/12–18/04 et 4/07–22/08/26",
+      "tarifs": {
+        "PC": {
+          "hs": 490,
+          "vs": 545,
+          "ete": 581,
+          "fetes": 560
+        },
+        "LOC": {
+          "hs": 460,
+          "vs": 510,
+          "ete": 500,
+          "fetes": 530
+        },
+        "DP": {
+          "ete": 497
+        }
+      },
+      "bebe_club": false,
+      "forfait_rm": false,
+      "qf_exc": false,
+      "enf_solo_half": false,
+      "vtf_department": "hautes-alpes",
+      "vtf_city": "montgenevre",
+      "vtf_slug": "le-grand-hotel",
+      "vtf_url_verified_at": "2026-05-25T08:54:20.642860+00:00"
+    }
+  },
+  {
+    "model": "catalog.village",
+    "pk": "le-sauze",
+    "fields": {
+      "nom": "Le Sauze",
+      "nom2": "Les Balcons du Sauze",
+      "region": "Alpes du Sud",
+      "env_emoji": "⛰️",
+      "env_code": "mountain",
+      "has_loc": false,
+      "ski": true,
+      "ouverture": "20/12–22/03 et 22/05–13/09/26",
+      "tarifs": {
+        "PC": {
+          "hs": 959,
+          "vs": 910,
+          "ete": 728,
+          "fetes": 854
+        },
+        "LOC": {
+          "hs": 430,
+          "vs": 480,
+          "ete": 470,
+          "fetes": 505
+        },
+        "DP": {
+          "hs": 420,
+          "ete": 616
+        }
+      },
+      "bebe_club": false,
+      "forfait_rm": false,
+      "qf_exc": false,
+      "enf_solo_half": false,
+      "vtf_department": "alpes-de-haute-provence",
+      "vtf_city": "le-sauze",
+      "vtf_slug": "les-balcons-du-sauze",
+      "vtf_url_verified_at": "2026-05-25T08:54:33.687648+00:00"
+    }
+  },
+  {
+    "model": "catalog.village",
+    "pk": "praloup",
+    "fields": {
+      "nom": "Praloup",
+      "nom2": "L'Ouka",
+      "region": "Alpes du Sud",
+      "env_emoji": "⛰️",
+      "env_code": "mountain",
+      "has_loc": false,
+      "ski": true,
+      "ouverture": "20/12–28/03 et 4/07–22/08/26",
+      "tarifs": {
+        "PC": {
+          "hs": 469,
+          "vs": 535,
+          "ete": 581,
+          "fetes": 548
+        },
+        "LOC": {
+          "hs": 440,
+          "vs": 495,
+          "ete": 485,
+          "fetes": 515
+        },
+        "DP": {
+          "ete": 497
+        }
+      },
+      "bebe_club": false,
+      "forfait_rm": false,
+      "qf_exc": false,
+      "enf_solo_half": false,
+      "vtf_department": "alpes-de-haute-provence",
+      "vtf_city": "uvernet-fours",
+      "vtf_slug": "l-ouka",
+      "vtf_url_verified_at": "2026-05-25T08:54:35.709565+00:00"
+    }
+  },
+  {
+    "model": "catalog.village",
+    "pk": "arvieux",
+    "fields": {
+      "nom": "Arvieux",
+      "nom2": "Les Esquirousses",
+      "region": "Alpes du Sud",
+      "env_emoji": "⛰️",
+      "env_code": "mountain",
+      "has_loc": false,
+      "ski": true,
+      "ouverture": "20/12–3/01, 7/02–7/03 et 6/06–13/09/26",
+      "tarifs": {
+        "PC": {
+          "hs": 763,
+          "vs": 784,
+          "ete": 728,
+          "fetes": 763
+        },
+        "LOC": {
+          "hs": 435,
+          "vs": 485,
+          "ete": 475,
+          "fetes": 510
+        },
+        "DP": {
+          "hs": 651,
+          "ete": 616,
+          "fetes": 651,
+          "vs": 665
+        }
+      },
+      "bebe_club": false,
+      "forfait_rm": false,
+      "qf_exc": false,
+      "enf_solo_half": false,
+      "vtf_department": "hautes-alpes",
+      "vtf_city": "arvieux",
+      "vtf_slug": "les-esquirousses",
+      "vtf_url_verified_at": "2026-05-25T08:54:29.830842+00:00"
+    }
+  },
+  {
+    "model": "catalog.village",
+    "pk": "savines",
+    "fields": {
+      "nom": "Savines-le-Lac",
+      "nom2": "Le Pigneroux",
+      "region": "Alpes du Sud",
+      "env_emoji": "⛰️",
+      "env_code": "mountain",
+      "has_loc": true,
+      "ski": false,
+      "ouverture": "20/12–3/01, 7/02–7/03 et 8/05–13/09/26",
+      "tarifs": {
+        "PC": {
+          "hs": 637,
+          "vs": 665,
+          "ete": 791,
+          "fetes": 644
+        },
+        "LOC": {
+          "hs": 532,
+          "vs": 500,
+          "ete": 532,
+          "fetes": 520
+        },
+        "DP": {
+          "hs": 539,
+          "ete": 672,
+          "fetes": 546,
+          "vs": 567
+        }
+      },
+      "bebe_club": false,
+      "forfait_rm": false,
+      "qf_exc": false,
+      "enf_solo_half": true,
+      "vtf_department": "hautes-alpes",
+      "vtf_city": "savines-le-lac",
+      "vtf_slug": "le-pigneroux",
+      "vtf_url_verified_at": "2026-05-25T08:54:53.909143+00:00"
+    }
+  },
+  {
+    "model": "catalog.village",
+    "pk": "saint-sauves",
+    "fields": {
+      "nom": "Saint-Sauves",
+      "nom2": "Le Domaine des Puys",
+      "region": "Massif Central / Jura",
+      "env_emoji": "🌲",
+      "env_code": "forest",
+      "has_loc": false,
+      "ski": true,
+      "ouverture": "18/10–1/11/25, 20/12–3/01, 17/01–21/03 et 4/04–1/11/26",
+      "tarifs": {
+        "PC": {
+          "hs": 693,
+          "vs": 574,
+          "ete": 791,
+          "fetes": 651
+        },
+        "LOC": {
+          "hs": 430,
+          "vs": 490,
+          "ete": 475,
+          "fetes": 510
+        },
+        "DP": {
+          "hs": 588,
+          "vs": 490,
+          "ete": 672,
+          "fetes": 553
+        }
+      },
+      "bebe_club": false,
+      "forfait_rm": false,
+      "qf_exc": false,
+      "enf_solo_half": true,
+      "vtf_department": "puy-de-dome",
+      "vtf_city": "saint-sauves-d-auvergne",
+      "vtf_slug": "le-domaine-des-puys",
+      "vtf_url_verified_at": "2026-05-25T08:55:53.421393+00:00"
+    }
+  },
+  {
+    "model": "catalog.village",
+    "pk": "metabief",
+    "fields": {
+      "nom": "Métabief",
+      "nom2": "Le Bief Rouge",
+      "region": "Massif Central / Jura",
+      "env_emoji": "🌲",
+      "env_code": "forest",
+      "has_loc": false,
+      "ski": true,
+      "ouverture": "18/10–1/11/25, 20/12–22/03, 11/04–26/09 et 17/10–1/11/26",
+      "tarifs": {
+        "PC": {
+          "hs": 959,
+          "vs": 840,
+          "ete": 749,
+          "fetes": 854
+        },
+        "LOC": {
+          "hs": 435,
+          "vs": 495,
+          "ete": 480,
+          "fetes": 515
+        },
+        "DP": {
+          "vs": 714,
+          "hs": 812,
+          "ete": 637,
+          "fetes": 728
+        }
+      },
+      "bebe_club": false,
+      "forfait_rm": false,
+      "qf_exc": false,
+      "enf_solo_half": false,
+      "vtf_department": "doubs",
+      "vtf_city": "metabief",
+      "vtf_slug": "le-bief-rouge",
+      "vtf_url_verified_at": "2026-05-25T08:55:47.238391+00:00"
+    }
+  },
+  {
+    "model": "catalog.village",
+    "pk": "soultzeren",
+    "fields": {
+      "nom": "Soultzeren",
+      "nom2": "Les Fougères",
+      "region": "Massif Central / Jura",
+      "env_emoji": "🌲",
+      "env_code": "forest",
+      "has_loc": true,
+      "ski": false,
+      "ouverture": "18/10–1/11/25, 28/11–3/01, 17/01–22/03 et 4/04–1/11/26",
+      "tarifs": {
+        "PC": {
+          "hs": 763,
+          "vs": 637,
+          "ete": 791,
+          "fetes": 819
+        },
+        "LOC": {
+          "hs": 679,
+          "vs": 581,
+          "ete": 581,
+          "fetes": 525
+        },
+        "DP": {
+          "hs": 651,
+          "vs": 539,
+          "ete": 672,
+          "fetes": 693
+        }
+      },
+      "bebe_club": false,
+      "forfait_rm": false,
+      "qf_exc": false,
+      "enf_solo_half": false,
+      "vtf_department": "haut-rhin",
+      "vtf_city": "soultzeren",
+      "vtf_slug": "les-fougeres",
+      "vtf_url_verified_at": "2026-05-25T08:55:58.634112+00:00"
+    }
+  },
+  {
+    "model": "catalog.village",
+    "pk": "font-durle",
+    "fields": {
+      "nom": "Font d'Urle (Vercors)",
+      "nom2": "",
+      "region": "Massif Central / Jura",
+      "env_emoji": "🌲",
+      "env_code": "forest",
+      "has_loc": false,
+      "ski": true,
+      "ouverture": "7/02–7/03 et 16/05–20/09/26",
+      "tarifs": {
+        "PC": {
+          "hs": 728,
+          "vs": 665,
+          "ete": 644
+        },
+        "LOC": {
+          "hs": 425,
+          "vs": 480,
+          "ete": 470
+        },
+        "DP": {
+          "hs": 399,
+          "ete": 546
+        }
+      },
+      "bebe_club": false,
+      "forfait_rm": false,
+      "qf_exc": false,
+      "enf_solo_half": false,
+      "vtf_department": "drome",
+      "vtf_city": "bouvante",
+      "vtf_slug": "font-urle",
+      "vtf_url_verified_at": "2026-05-25T08:55:44.051627+00:00"
+    }
+  },
+  {
+    "model": "catalog.village",
+    "pk": "bedoin",
+    "fields": {
+      "nom": "Bédoin (Ventoux)",
+      "nom2": "Les Florans",
+      "region": "Campagne / Provence",
+      "env_emoji": "🌻",
+      "env_code": "countryside",
+      "has_loc": false,
+      "ski": false,
+      "ouverture": "27/03–1/11/26",
+      "tarifs": {
+        "PC": {
+          "hs": 588,
+          "vs": 637,
+          "ete": 763
+        },
+        "LOC": {
+          "hs": 430,
+          "vs": 485,
+          "ete": 505
+        },
+        "DP": {
+          "vs": 539,
+          "ete": 651,
+          "hs": 497
+        }
+      },
+      "bebe_club": false,
+      "forfait_rm": false,
+      "qf_exc": false,
+      "enf_solo_half": false,
+      "vtf_department": "vaucluse",
+      "vtf_city": "bedoin",
+      "vtf_slug": "les-florans",
+      "vtf_url_verified_at": "2026-05-25T08:55:32.842162+00:00"
+    }
+  },
+  {
+    "model": "catalog.village",
+    "pk": "cereste",
+    "fields": {
+      "nom": "Céreste (Luberon)",
+      "nom2": "Le Domaine du Grand Luberon",
+      "region": "Campagne / Provence",
+      "env_emoji": "🌻",
+      "env_code": "countryside",
+      "has_loc": false,
+      "ski": false,
+      "ouverture": "20/12–3/01 et 28/03–1/11/26",
+      "tarifs": {
+        "PC": {
+          "hs": 588,
+          "vs": 637,
+          "ete": 763,
+          "fetes": 520
+        },
+        "LOC": {
+          "hs": 430,
+          "vs": 480,
+          "ete": 500,
+          "fetes": 490
+        },
+        "DP": {
+          "vs": 539,
+          "ete": 651,
+          "hs": 497
+        }
+      },
+      "bebe_club": false,
+      "forfait_rm": false,
+      "qf_exc": false,
+      "enf_solo_half": true,
+      "vtf_department": "alpes-de-haute-provence",
+      "vtf_city": "cereste",
+      "vtf_slug": "le-domaine-du-grand-luberon",
+      "vtf_url_verified_at": "2026-05-25T08:55:40.064705+00:00"
+    }
+  },
+  {
+    "model": "catalog.village",
+    "pk": "singleyrac",
+    "fields": {
+      "nom": "Singleyrac (Dordogne)",
+      "nom2": "Le Domaine du Peyrichoux",
+      "region": "Campagne / Provence",
+      "env_emoji": "🌻",
+      "env_code": "countryside",
+      "has_loc": true,
+      "ski": false,
+      "ouverture": "11/04–24/10/26",
+      "tarifs": {
+        "PC": {
+          "hs": 469,
+          "vs": 581,
+          "ete": 749
+        },
+        "LOC": {
+          "hs": 476,
+          "vs": 476,
+          "ete": 476
+        },
+        "DP": {
+          "hs": 399,
+          "vs": 497,
+          "ete": 637
+        }
+      },
+      "bebe_club": false,
+      "forfait_rm": false,
+      "qf_exc": false,
+      "enf_solo_half": false,
+      "vtf_department": "dordogne",
+      "vtf_city": "singleyrac",
+      "vtf_slug": "le-domaine-du-peyrichoux",
+      "vtf_url_verified_at": "2026-05-25T08:55:41.920427+00:00"
+    }
+  },
+  {
+    "model": "catalog.village",
+    "pk": "areches",
+    "fields": {
+      "nom": "Arêches-Beaufort",
+      "nom2": "Le Rafour",
+      "region": "Alpes / Savoie",
+      "env_emoji": "⛰️",
+      "env_code": "mountain",
+      "has_loc": true,
+      "ski": false,
+      "ouverture": "5/06–12/09/26",
+      "tarifs": {
+        "PC": {
+          "hs": 994,
+          "vs": 833,
+          "ete": 728,
+          "fetes": 812
+        },
+        "LOC": {
+          "hs": 532,
+          "vs": 500,
+          "ete": 532,
+          "fetes": 680
+        },
+        "DP": {
+          "hs": 847,
+          "ete": 616,
+          "fetes": 693,
+          "vs": 707
+        }
+      },
+      "bebe_club": false,
+      "forfait_rm": false,
+      "qf_exc": false,
+      "enf_solo_half": false,
+      "vtf_department": "savoie",
+      "vtf_city": "areches-beaufort",
+      "vtf_slug": "le-rafour",
+      "vtf_url_verified_at": "2026-05-25T08:53:51.746197+00:00"
+    }
+  },
+  {
+    "model": "catalog.village",
+    "pk": "vernet",
+    "fields": {
+      "nom": "Vernet-les-Bains",
+      "nom2": "Clair Canigou",
+      "region": "Occitanie / Pyrénées",
+      "env_emoji": "⛰️",
+      "env_code": "mountain",
+      "has_loc": false,
+      "ski": false,
+      "ouverture": "23/05–3/10/26",
+      "tarifs": {
+        "PC": {
+          "hs": 588,
+          "ete": 707
+        },
+        "LOC": {
+          "hs": 550,
+          "ete": 585
+        },
+        "DP": {
+          "hs": 497,
+          "ete": 602
+        }
+      },
+      "bebe_club": false,
+      "forfait_rm": false,
+      "qf_exc": false,
+      "enf_solo_half": false,
+      "vtf_department": "pyrenees-orientales",
+      "vtf_city": "vernet-les-bains",
+      "vtf_slug": "clair-canigou",
+      "vtf_url_verified_at": "2026-05-25T08:56:36.259857+00:00"
+    }
+  },
+  {
+    "model": "catalog.village",
+    "pk": "talloires",
+    "fields": {
+      "nom": "Talloires",
+      "nom2": "Les Alérions",
+      "region": "Alpes / Savoie",
+      "env_emoji": "⛰️",
+      "env_code": "mountain",
+      "has_loc": false,
+      "ski": false,
+      "tarif_unit": "night",
+      "ouverture": "15/03–31/12/26 (sf novembre)",
+      "tarifs": {
+        "PC": {
+          "hs": 62,
+          "vs": 490,
+          "ete": 510,
+          "fetes": 525
+        },
+        "LOC": {
+          "hs": 40,
+          "vs": 460,
+          "ete": 485,
+          "fetes": 500
+        },
+        "DP": {
+          "hs": 53
+        }
+      },
+      "bebe_club": false,
+      "forfait_rm": false,
+      "qf_exc": false,
+      "enf_solo_half": false,
+      "vtf_department": "haute-savoie",
+      "vtf_city": "talloires",
+      "vtf_slug": "les-alerions",
+      "vtf_url_verified_at": "2026-05-25T08:54:27.366069+00:00"
+    }
+  },
+  {
+    "model": "catalog.village",
+    "pk": "montricher-albanne",
+    "fields": {
+      "nom": "Montricher-Albanne",
+      "nom2": "Résidence Les Karellis (secteur)",
+      "region": "Alpes / Savoie",
+      "env_emoji": "⛰️",
+      "env_code": "mountain",
+      "has_loc": false,
+      "ski": false,
+      "ouverture": "⚠ Dates à confirmer VTF",
+      "tarifs": {
+        "PC": {
+          "hs": 1253,
+          "vs": 545,
+          "ete": 581,
+          "fetes": 1078
+        },
+        "LOC": {
+          "hs": 460,
+          "vs": 510,
+          "ete": 500,
+          "fetes": 535
+        }
+      },
+      "bebe_club": false,
+      "forfait_rm": false,
+      "qf_exc": false,
+      "enf_solo_half": false,
+      "vtf_department": "savoie",
+      "vtf_city": "montricher-albanne",
+      "vtf_slug": "les-balcons-de-maurienne",
+      "vtf_url_verified_at": "2026-05-25T08:54:25.329507+00:00"
+    }
+  },
+  {
+    "model": "catalog.attraction",
+    "pk": 1,
+    "fields": {
+      "village": "biarritz",
+      "nom": "Pays Basque",
+      "type": "Culture & patrimoine",
+      "icon": "🔴",
+      "km": 8
+    }
+  },
+  {
+    "model": "catalog.attraction",
+    "pk": 2,
+    "fields": {
+      "village": "biscarrosse",
+      "nom": "Parc aquatique",
+      "type": "Parc aquatique",
+      "icon": "💦",
+      "km": 0
+    }
+  },
+  {
+    "model": "catalog.attraction",
+    "pk": 3,
+    "fields": {
+      "village": "biscarrosse",
+      "nom": "Dunes du Pilat",
+      "type": "Site naturel",
+      "icon": "🏜️",
+      "km": 23
+    }
+  },
+  {
+    "model": "catalog.attraction",
+    "pk": 4,
+    "fields": {
+      "village": "bandol",
+      "nom": "Calanques",
+      "type": "Parc national",
+      "icon": "⛵",
+      "km": 27
+    }
+  },
+  {
+    "model": "catalog.attraction",
+    "pk": 5,
+    "fields": {
+      "village": "bandol",
+      "nom": "Parc d'attractions",
+      "type": "Parc d'attractions",
+      "icon": "🤠",
+      "km": 30
+    }
+  },
+  {
+    "model": "catalog.attraction",
+    "pk": 7,
+    "fields": {
+      "village": "agde",
+      "nom": "Parc aquatique",
+      "type": "Parc aquatique",
+      "icon": "💦",
+      "km": 2
+    }
+  },
+  {
+    "model": "catalog.attraction",
+    "pk": 8,
+    "fields": {
+      "village": "chamonix",
+      "nom": "Mer de Glace",
+      "type": "Glacier iconique",
+      "icon": "🧊",
+      "km": 3
+    }
+  },
+  {
+    "model": "catalog.attraction",
+    "pk": 9,
+    "fields": {
+      "village": "chamonix",
+      "nom": "Mont-Blanc",
+      "type": "Sommet iconique",
+      "icon": "🏔️",
+      "km": 12
+    }
+  },
+  {
+    "model": "catalog.attraction",
+    "pk": 10,
+    "fields": {
+      "village": "la-plagne",
+      "nom": "Mont-Blanc",
+      "type": "Sommet iconique",
+      "icon": "🏔️",
+      "km": 39
+    }
+  },
+  {
+    "model": "catalog.attraction",
+    "pk": 11,
+    "fields": {
+      "village": "talloires",
+      "nom": "Lac d'Annecy",
+      "type": "Lac iconique",
+      "icon": "🏞️",
+      "km": 5
+    }
+  },
+  {
+    "model": "catalog.attraction",
+    "pk": 12,
+    "fields": {
+      "village": "talloires",
+      "nom": "Annecy",
+      "type": "Venise des Alpes",
+      "icon": "🌊",
+      "km": 8
+    }
+  },
+  {
+    "model": "catalog.attraction",
+    "pk": 13,
+    "fields": {
+      "village": "areches",
+      "nom": "Mont-Blanc",
+      "type": "Sommet iconique",
+      "icon": "🏔️",
+      "km": 27
+    }
+  },
+  {
+    "model": "catalog.attraction",
+    "pk": 14,
+    "fields": {
+      "village": "areches",
+      "nom": "Mer de Glace",
+      "type": "Glacier iconique",
+      "icon": "🧊",
+      "km": 37
+    }
+  },
+  {
+    "model": "catalog.attraction",
+    "pk": 15,
+    "fields": {
+      "village": "areches",
+      "nom": "Lac d'Annecy",
+      "type": "Lac iconique",
+      "icon": "🏞️",
+      "km": 37
+    }
+  },
+  {
+    "model": "catalog.attraction",
+    "pk": 16,
+    "fields": {
+      "village": "areches",
+      "nom": "Annecy",
+      "type": "Venise des Alpes",
+      "icon": "🌊",
+      "km": 40
+    }
+  },
+  {
+    "model": "catalog.attraction",
+    "pk": 17,
+    "fields": {
+      "village": "saint-sauves",
+      "nom": "Parc volcanique",
+      "type": "Parc volcanique",
+      "icon": "🌋",
+      "km": 18
+    }
+  },
+  {
+    "model": "catalog.attraction",
+    "pk": 18,
+    "fields": {
+      "village": "saint-sauves",
+      "nom": "Puy de Dôme",
+      "type": "Volcan iconique",
+      "icon": "🌋",
+      "km": 21
+    }
+  },
+  {
+    "model": "catalog.attraction",
+    "pk": 19,
+    "fields": {
+      "village": "soultzeren",
+      "nom": "Colmar",
+      "type": "Ville alsacienne",
+      "icon": "🍷",
+      "km": 17
+    }
+  },
+  {
+    "model": "catalog.attraction",
+    "pk": 20,
+    "fields": {
+      "village": "bedoin",
+      "nom": "Mont-Ventoux",
+      "type": "Géant de Provence",
+      "icon": "🚴",
+      "km": 10
+    }
+  },
+  {
+    "model": "catalog.attraction",
+    "pk": 21,
+    "fields": {
+      "village": "bedoin",
+      "nom": "Gordes",
+      "type": "Plus beau village",
+      "icon": "🏘️",
+      "km": 24
+    }
+  },
+  {
+    "model": "catalog.attraction",
+    "pk": 22,
+    "fields": {
+      "village": "bedoin",
+      "nom": "Colorado Provençal",
+      "type": "Site naturel",
+      "icon": "🟠",
+      "km": 31
+    }
+  },
+  {
+    "model": "catalog.attraction",
+    "pk": 23,
+    "fields": {
+      "village": "bedoin",
+      "nom": "Avignon",
+      "type": "Festival, patrimoine",
+      "icon": "🎭",
+      "km": 35
+    }
+  },
+  {
+    "model": "catalog.attraction",
+    "pk": 24,
+    "fields": {
+      "village": "cereste",
+      "nom": "Colorado Provençal",
+      "type": "Site naturel",
+      "icon": "🟠",
+      "km": 13
+    }
+  },
+  {
+    "model": "catalog.attraction",
+    "pk": 25,
+    "fields": {
+      "village": "cereste",
+      "nom": "Gordes",
+      "type": "Plus beau village",
+      "icon": "🏘️",
+      "km": 31
+    }
+  },
+  {
+    "model": "catalog.attraction",
+    "pk": 26,
+    "fields": {
+      "village": "cereste",
+      "nom": "Zoo",
+      "type": "Zoo",
+      "icon": "🦁",
+      "km": 34
+    }
+  },
+  {
+    "model": "catalog.attraction",
+    "pk": 27,
+    "fields": {
+      "village": "cereste",
+      "nom": "Mont-Ventoux",
+      "type": "Géant de Provence",
+      "icon": "🚴",
+      "km": 43
+    }
+  }
+]

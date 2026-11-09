@@ -1,0 +1,42 @@
+[
+  {
+    "model": "catalog.fueloption",
+    "pk": "essence",
+    "fields": {
+      "label": "Essence",
+      "cost_per_km": "0.12"
+    }
+  },
+  {
+    "model": "catalog.fueloption",
+    "pk": "diesel",
+    "fields": {
+      "label": "Diesel",
+      "cost_per_km": "0.09"
+    }
+  },
+  {
+    "model": "catalog.fueloption",
+    "pk": "electrique",
+    "fields": {
+      "label": "Électrique",
+      "cost_per_km": "0.04"
+    }
+  },
+  {
+    "model": "catalog.fueloption",
+    "pk": "gpl",
+    "fields": {
+      "label": "GPL",
+      "cost_per_km": "0.07"
+    }
+  },
+  {
+    "model": "catalog.fueloption",
+    "pk": "essenceSP98",
+    "fields": {
+      "label": "Essence SP98",
+      "cost_per_km": "0.13"
+    }
+  }
+]

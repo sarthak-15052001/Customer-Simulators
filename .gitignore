@@ -1,0 +1,39 @@
+# Root .gitignore — see vtf/front/.gitignore and vtf/api/.gitignore for per-app rules.
+.DS_Store
+*.log
+
+# Env files
+.env
+.env.*
+!.env.example
+
+# Node / front
+node_modules/
+*.tsbuildinfo
+.vite/
+dist/
+.parcel-cache
+.next
+.nuxt
+.svelte-kit/
+
+# Python / api — duplicated here so root-level operations stay clean
+__pycache__/
+*.py[cod]
+*.sqlite3
+.venv/
+venv/
+.tox/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+
+# IDE / tooling
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# Claude Code local config (never commit per-user permission lists)
+.claude/

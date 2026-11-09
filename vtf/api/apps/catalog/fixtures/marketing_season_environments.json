@@ -1,0 +1,158 @@
+[
+  {
+    "model": "catalog.marketingseasonenvironment",
+    "pk": 1,
+    "fields": {
+      "marketing_season": "printemps",
+      "key": "mer",
+      "icon": "🌊",
+      "label": "Mer",
+      "sub": "Bretagne · Méditerranée · Atlantique",
+      "order": 1
+    }
+  },
+  {
+    "model": "catalog.marketingseasonenvironment",
+    "pk": 2,
+    "fields": {
+      "marketing_season": "printemps",
+      "key": "montagne",
+      "icon": "⛰️",
+      "label": "Montagne",
+      "sub": "Alpes · Pyrénées · Massif Central",
+      "order": 2
+    }
+  },
+  {
+    "model": "catalog.marketingseasonenvironment",
+    "pk": 3,
+    "fields": {
+      "marketing_season": "printemps",
+      "key": "campagne",
+      "icon": "🌻",
+      "label": "Campagne",
+      "sub": "Provence · Dordogne · Luberon",
+      "order": 3
+    }
+  },
+  {
+    "model": "catalog.marketingseasonenvironment",
+    "pk": 4,
+    "fields": {
+      "marketing_season": "ete",
+      "key": "mer",
+      "icon": "🌊",
+      "label": "Mer",
+      "sub": "Bretagne · Méditerranée · Atlantique",
+      "order": 1
+    }
+  },
+  {
+    "model": "catalog.marketingseasonenvironment",
+    "pk": 5,
+    "fields": {
+      "marketing_season": "ete",
+      "key": "montagne",
+      "icon": "⛰️",
+      "label": "Montagne",
+      "sub": "Alpes · Pyrénées · Massif Central",
+      "order": 2
+    }
+  },
+  {
+    "model": "catalog.marketingseasonenvironment",
+    "pk": 6,
+    "fields": {
+      "marketing_season": "ete",
+      "key": "campagne",
+      "icon": "🌻",
+      "label": "Campagne",
+      "sub": "Provence · Dordogne · Luberon",
+      "order": 3
+    }
+  },
+  {
+    "model": "catalog.marketingseasonenvironment",
+    "pk": 7,
+    "fields": {
+      "marketing_season": "automne",
+      "key": "mer",
+      "icon": "🌊",
+      "label": "Mer",
+      "sub": "Bretagne · Méditerranée · Atlantique",
+      "order": 1
+    }
+  },
+  {
+    "model": "catalog.marketingseasonenvironment",
+    "pk": 8,
+    "fields": {
+      "marketing_season": "automne",
+      "key": "montagne",
+      "icon": "⛰️",
+      "label": "Montagne",
+      "sub": "Alpes · Pyrénées · Massif Central",
+      "order": 2
+    }
+  },
+  {
+    "model": "catalog.marketingseasonenvironment",
+    "pk": 9,
+    "fields": {
+      "marketing_season": "automne",
+      "key": "campagne",
+      "icon": "🌻",
+      "label": "Campagne",
+      "sub": "Provence · Dordogne · Luberon",
+      "order": 3
+    }
+  },
+  {
+    "model": "catalog.marketingseasonenvironment",
+    "pk": 10,
+    "fields": {
+      "marketing_season": "hiver",
+      "key": "ski",
+      "icon": "⛷️",
+      "label": "Ski",
+      "sub": "Domaines alpins",
+      "order": 1
+    }
+  },
+  {
+    "model": "catalog.marketingseasonenvironment",
+    "pk": 11,
+    "fields": {
+      "marketing_season": "hiver",
+      "key": "fond",
+      "icon": "🏔️",
+      "label": "Ski de fond\nRaquettes",
+      "sub": "Massif Central · Jura",
+      "order": 2
+    }
+  },
+  {
+    "model": "catalog.marketingseasonenvironment",
+    "pk": 12,
+    "fields": {
+      "marketing_season": "hiver",
+      "key": "campagne",
+      "icon": "🌻",
+      "label": "Campagne",
+      "sub": "Provence · Dordogne",
+      "order": 3
+    }
+  },
+  {
+    "model": "catalog.marketingseasonenvironment",
+    "pk": 13,
+    "fields": {
+      "marketing_season": "hiver",
+      "key": "mer",
+      "icon": "🌊",
+      "label": "Mer",
+      "sub": "Côte ouverte en hiver",
+      "order": 4
+    }
+  }
+]

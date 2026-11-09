@@ -1,0 +1,55 @@
+[
+  {
+    "model": "catalog.pricingrules",
+    "pk": 1,
+    "fields": {
+      "updated_at": "2026-03-13",
+      "payload": {
+        "updatedAt": "2026-03-13",
+        "durationCoefficients": {
+          "3": 0.5,
+          "7": 1.0,
+          "11": 1.45,
+          "14": 1.8
+        },
+        "formulaCoefficients": {
+          "PC": 1.0,
+          "DP": 0.82
+        },
+        "membership": {
+          "individual": 22,
+          "familyOrCouple": 44
+        },
+        "soloSupplementPerNight": {
+          "default": 22,
+          "reduced": 11,
+          "off": 0
+        },
+        "quinzaineFuteeRate": 0.1,
+        "maxiFamilyChildrenRate": 0.2,
+        "defaults": {
+          "activityPriceAdult": 15,
+          "activityPriceChild": 10,
+          "mealPriceAdult": 28,
+          "mealPriceChild": 15,
+          "locKitPrice": 10,
+          "tollPerKm": 0.07,
+          "fuelCostPerKm": 0.0,
+          "trainAdultOneWay": 65,
+          "trainChildOneWay": 35
+        },
+        "childDiscounts": {
+          "lt1": 1.0,
+          "1to2_withBebeClub": 0.7,
+          "1to2_withoutBebeClub": 0.9,
+          "3to5": 0.4,
+          "6to10": 0.2,
+          "11to15": 0.1,
+          "ge16": 0.0
+        }
+      },
+      "is_active": true,
+      "created_at": "2026-03-13T00:00:00+00:00"
+    }
+  }
+]

@@ -1,0 +1,16 @@
+{% extends "admin/change_list.html" %}
+{% load i18n admin_urls %}
+
+{% block object-tools-items %}
+<li>
+    <a href="{% url 'admin:tariff_scraper_control' %}" class="addlink">
+        Lancer le scraping
+    </a>
+</li>
+<li>
+    <a href="{% url 'admin:tariff_scraper_price_health_dashboard' %}" class="addlink">
+        Tableau de bord
+    </a>
+</li>
+{{ block.super }}
+{% endblock %}

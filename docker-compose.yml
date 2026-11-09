@@ -1,0 +1,106 @@
+# Local development stack for vtf/.
+#
+#   docker compose up           # start all services
+#   docker compose up front     # start only the frontend
+#   docker compose run --rm front bun install
+#   docker compose run --rm api python manage.py migrate
+#
+# All persistent state lives in named volumes with the `local` driver, so
+# data is stored on this host's filesystem (under /var/lib/docker/volumes/).
+# Source code is bind-mounted from ./vtf/{front,api} for live reload.
+
+name: vtf
+
+services:
+  # ─────────────────────────────────────────────────────────────────────────
+  # Frontend — React + Vite + TypeScript
+  # Image bundles Node 22 + npm + Bun on Alpine so the team can pick its
+  # tool of choice. Default command uses npm; override at run-time if needed.
+  # ─────────────────────────────────────────────────────────────────────────
+  front:
+    build:
+      context: ./vtf/front
+      dockerfile: Dockerfile
+    image: vtf-front:dev
+    container_name: vtf-front
+    working_dir: /app
+    environment:
+      - NODE_ENV=development
+      - VITE_API_URL=http://localhost:8000
+      - CHOKIDAR_USEPOLLING=true   # reliable file-watching on bind mounts
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./vtf/front:/app
+      - front_node_modules:/app/node_modules
+      - bun_cache:/root/.bun/install/cache
+    command: ["sh", "-c", "if [ ! -d node_modules ] || [ -z \"$(ls -A node_modules 2>/dev/null)\" ]; then npm install; fi && npm run dev -- --host 0.0.0.0"]
+    depends_on:
+      - api
+
+  # ─────────────────────────────────────────────────────────────────────────
+  # Backend API — Django + DRF (skeleton; bootstrap when ready)
+  # See vtf/api/docs/09-implementation-roadmap.md.
+  # The container is ready to run as soon as `manage.py` exists; until then
+  # it stays alive so you can `docker compose exec api sh` and bootstrap.
+  # ─────────────────────────────────────────────────────────────────────────
+  api:
+    build:
+      context: ./vtf/api
+      dockerfile: Dockerfile
+    image: vtf-api:dev
+    container_name: vtf-api
+    working_dir: /app
+    environment:
+      - PYTHONDONTWRITEBYTECODE=1
+      - PYTHONUNBUFFERED=1
+      - DJANGO_SETTINGS_MODULE=config.settings.dev
+      - DATABASE_URL=sqlite:////app/.data/db.sqlite3
+      - REDIS_URL=redis://redis:6379/0
+      - ALLOWED_HOSTS=*
+      - CORS_ALLOWED_ORIGINS=http://localhost:5173
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./vtf/api:/app
+      - api_pip_cache:/root/.cache/pip
+      - api_data:/app/.data
+    # The entrypoint script runs migrate, optionally seeds fixtures (only if
+    # the catalog is empty — disable with LOAD_FIXTURES_ON_BOOT=0), then
+    # exec's runserver. See vtf/api/scripts/docker_entrypoint.sh.
+    command: ["bash", "/app/scripts/docker_entrypoint.sh"]
+    depends_on:
+      - redis
+
+  # ─────────────────────────────────────────────────────────────────────────
+  # Redis — cache + Surprise SVD model storage (Phase 3)
+  # ─────────────────────────────────────────────────────────────────────────
+  redis:
+    image: redis:7-alpine
+    container_name: vtf-redis
+    restart: unless-stopped
+    command: ["redis-server", "--appendonly", "yes"]
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+# ─── Local-only named volumes ────────────────────────────────────────────
+# Explicit `driver: local` keeps everything on this host's filesystem
+# (no remote volume drivers, no NFS, no shared cloud disks).
+volumes:
+  front_node_modules:
+    driver: local
+  bun_cache:
+    driver: local
+  api_pip_cache:
+    driver: local
+  api_data:
+    driver: local
+  redis_data:
+    driver: local

@@ -1,0 +1,112 @@
+[
+  {
+    "model": "catalog.formula",
+    "pk": "PC",
+    "fields": {
+      "icon": "🍽️",
+      "icon_key": "pc",
+      "label": "Pension complète",
+      "short_description": "Petit-déj + déjeuner + dîner",
+      "include_text": "🥗 Inclus en pension complète : Repas buffet + vin à table · Clubs enfants · Animations · Piscine & espace bien-être · Randonnées guidées · Ménage · WIFI",
+      "sort_order": 0,
+      "villages": [
+        "agde",
+        "alpe-dhuez",
+        "areches",
+        "arvieux",
+        "bandol",
+        "bedoin",
+        "biarritz",
+        "blainville",
+        "cereste",
+        "chamonix",
+        "doucy",
+        "font-durle",
+        "karellis",
+        "la-plagne",
+        "lacanau",
+        "le-sauze",
+        "metabief",
+        "montgenevre",
+        "montricher-albanne",
+        "praloup",
+        "riec",
+        "saint-cast",
+        "saint-sauves",
+        "sainte-maxime",
+        "savines",
+        "singleyrac",
+        "soultzeren",
+        "talloires",
+        "vernet",
+        "carcans-les-bruyeres"
+      ]
+    }
+  },
+  {
+    "model": "catalog.formula",
+    "pk": "DP",
+    "fields": {
+      "icon": "🌅",
+      "icon_key": "dp",
+      "label": "Demi-pension",
+      "short_description": "Petit-déjeuner + dîner",
+      "include_text": "🥗 Inclus en demi-pension : Petit-déjeuner & dîner buffet + vin à table · Clubs enfants · Animations · Piscine & espace bien-être · Randonnées guidées · Ménage · WIFI",
+      "sort_order": 1,
+      "villages": [
+        "agde",
+        "areches",
+        "arvieux",
+        "bandol",
+        "bedoin",
+        "biarritz",
+        "blainville",
+        "cereste",
+        "chamonix",
+        "doucy",
+        "font-durle",
+        "karellis",
+        "la-plagne",
+        "lacanau",
+        "le-sauze",
+        "metabief",
+        "montgenevre",
+        "montricher-albanne",
+        "praloup",
+        "riec",
+        "saint-cast",
+        "saint-sauves",
+        "sainte-maxime",
+        "savines",
+        "singleyrac",
+        "soultzeren",
+        "talloires",
+        "vernet"
+      ]
+    }
+  },
+  {
+    "model": "catalog.formula",
+    "pk": "LOC",
+    "fields": {
+      "icon": "🏠",
+      "icon_key": "loc",
+      "label": "Location",
+      "short_description": "Appartement ou chambre seule",
+      "include_text": "🏠 Inclus en location : Hébergement seul · Clubs enfants · Animations · Piscine & espace bien-être · Randonnées guidées · WIFI",
+      "sort_order": 2,
+      "villages": [
+        "biscarrosse",
+        "carcans-les-oyats",
+        "carcans-les-bruyeres",
+        "areches",
+        "biarritz",
+        "blainville",
+        "riec",
+        "savines",
+        "singleyrac",
+        "soultzeren"
+      ]
+    }
+  }
+]

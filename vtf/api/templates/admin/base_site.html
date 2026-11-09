@@ -1,0 +1,24 @@
+{% extends "admin/base.html" %}
+{% load static %}
+
+{% block title %}{{ title }} | VTF Admin{% endblock %}
+
+{% block extrastyle %}
+{{ block.super }}
+<link rel="stylesheet" href="{% static 'admin/css/custom_admin.css' %}">
+{% endblock %}
+
+{% block branding %}
+<div class="admin-brand-card">
+    <div class="admin-logo-strip">
+        <img src="{% static 'admin/img/vtf-logo.svg' %}" alt="VTF" class="vtf-logo" onerror="this.onerror=null;this.src='{% static 'admin/img/vtf-logo.jpg' %}';">
+    </div>
+    <div class="admin-titlebar">Administration VTF</div>
+</div>
+{% endblock %}
+
+{% block footer %}
+<div id="vtf-footer">
+    Propulsé par <a href="https://upto1.fr/" target="_blank" rel="noopener noreferrer">UpTo1</a> &bull; VTF &copy; {% now "Y" %}
+</div>
+{% endblock %}
